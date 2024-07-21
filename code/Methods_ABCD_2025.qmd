@@ -12,3 +12,6 @@ https://www.scottishairquality.scot/
 
 OpenAir data analysis tools, provided alongside Scottish Air Quality data, Scottish Government 
 https://www.scottishairquality.scot/data/openair 
+
+UK NAEI - National Atmospheric Emissions Inventory 
+https://naei.beis.gov.uk/
