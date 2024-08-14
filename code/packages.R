@@ -3,3 +3,4 @@
 library(tidyverse)
 library(here)
 library(config)
+library(leaflet)
