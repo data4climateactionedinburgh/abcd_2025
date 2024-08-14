@@ -1,0 +1,17 @@
+
+
+
+# Methods 
+
+In the first instance, I'll use R along with the OpenAir tools, see if that's possible. 
+
+## Data Sources 
+
+SAQD - Scottish Air Quality Database, Scottish Government
+https://www.scottishairquality.scot/ 
+
+OpenAir data analysis tools, provided alongside Scottish Air Quality data, Scottish Government 
+https://www.scottishairquality.scot/data/openair 
+
+UK NAEI - National Atmospheric Emissions Inventory 
+https://naei.beis.gov.uk/
