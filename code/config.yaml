@@ -1,0 +1,5 @@
+# Config values for the abcd analysis
+# For information on yaml see 
+
+# Integer value for the year of the report
+abcd_report_year <- 2025L
