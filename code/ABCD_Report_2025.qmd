@@ -1,0 +1,49 @@
+---
+title: "ABCD Report 2025"
+author: "D4CAE - Data 4 Climate Action Edinburgh"
+format: html
+editor: visual
+---
+
+## Analysis By the Collective: D4CAE (Data for Climate Action Edinburgh)
+
+add D4CAE logo!!!
+
+add table of contents!!!
+
+Published: add date!!!
+
+# Introduction
+
+## Scope
+
+The aim of this report is to present key data on climate action happening, and climate impacts on, the city of Edinburgh in Scotland. As the output of a small voluntary local group, D4CAE, the scope is modest, addressing a handful of aspects of climate action and climate impacts.
+
+## Open access
+
+This report is an open science project - the data, code and text are all being produced in a publicly available repository on GitHub:
+
+<https://github.com/data4climateactionedinburgh/abcd_2025>
+
+Any amendments will be visible in this same GitHub repo, as commits, in the normal Git version control way. This report file, the text, and all the files in the repository are made available under a Creative Commons Zero v1.0 licence, except of course those subject to ownership by the respective data providers. The files created by D4CAE are thus placed in the public domain, and may be copied, adapted and redistributed without condition. If you wish to cite this work, please cite Data 4 Climate Action Edinburgh as the author.
+
+## The group 
+
+D4CAE was set up by Pauline Ward, who is also the main contributor to this report. You can find our blog and contact details on our website:
+
+<https://data-4-climate-action-edinburgh.github.io/home/>
+
+# Transport
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
