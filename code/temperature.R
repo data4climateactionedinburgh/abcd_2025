@@ -20,3 +20,5 @@ temperature_data |>
   ncvar_get(varid = "format")
 
 print(temperature_data)
+
+# Identify grid refs for Edinburgh

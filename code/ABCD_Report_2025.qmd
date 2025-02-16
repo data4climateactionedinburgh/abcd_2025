@@ -38,9 +38,15 @@ D4CAE was set up by Pauline Ward, who is also the main contributor to this repor
 
 # Temperature
 
+The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the 0.5 to 1.0 degrees celsius anomaly relating to the 1991 to 2020 period. 
+
 # Travel 
 
 # Climate action 
+
+# References
+
+Met Office (2025) "Annual Assessment - 2024" https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf 
 
 
 
