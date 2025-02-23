@@ -13,13 +13,16 @@ data_subdir <- "temperature_HadUK_Grid"
 data_filenm_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
 
 # import one month's data
-temperature_data <- nc_open(here(data_dir_name, data_subdir, data_filenm_temprtr))
+#temperature_data <- nc_open(here(data_dir_name, data_subdir, data_filenm_temprtr))
+# use tidync instead of nc_open()
+imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
 
 
-# call ncvar_get() to access data from a varbl
-temperature_data |> 
-  ncvar_get(varid = "format")
 
-print(temperature_data)
+# call ncvar_get() to access data from a varbl, not working
+#temperature_data |> 
+ # ncvar_get(varid = "format")
+
+#print(temperature_data)
 
 # Identify grid refs for Edinburgh
