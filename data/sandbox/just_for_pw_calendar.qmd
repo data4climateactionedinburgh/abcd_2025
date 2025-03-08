@@ -1,0 +1,47 @@
+---
+title: "Calendar"
+author: "Pauline"
+output: flexdashboard::flex_dashboard
+editor: visual
+---
+
+## Reusable Calendar
+
+ 
+```{r cal_setup}
+#| echo: false
+#| warning: false
+
+library(clock)
+library(flexdashboard)
+library(kableExtra)
+
+target_year <- 2025L
+```
+## Picturing the future
+Add inspirational quote here. 
+"Preparation, preparation, preparation!"
+
+```{r build_dates}
+#| echo: false
+# date_build returns V strange object, can be a vector of one for each month, but only one for each month, ie not multiple dates
+# flexdash initiate
+# and format
+the_whole_year <- c()
+this_month <- 6L
+this_day <- 29L
+single_date <- date_build(target_year, this_month, this_day)
+the_whole_year <- append(the_whole_year, single_date)
+
+# add to table(?()) data struc for flexdashbd
+# next date
+
+# output table
+the_whole_year |> kable()
+
+```
+
+The year, is: `{r} target_year `
+ ... ta-dah!!! 
+ 
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.

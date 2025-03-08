@@ -28,4 +28,6 @@ imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temp
 
 #print(temperature_data)
 
-# Identify grid refs for Edinburgh
+# Identify OS grid refs for Edinburgh - grid square NT
+# one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
+single_location <- "NT 25981 74498"
