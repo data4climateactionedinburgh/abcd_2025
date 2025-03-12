@@ -1,0 +1,29 @@
+> imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
+> imported_temperature
+
+Data Source (1): tas_hadukgrid_uk_1km_mon_202403.nc ...
+
+Grids (8) <dimension family> : <associated variables> 
+
+[1]   D2,D1,D0 : tas    **ACTIVE GRID** ( 1305000  values per variable)
+[2]   D2,D1    : latitude, longitude
+[3]   D3,D0    : time_bnds
+[4]   D3,D1    : projection_y_coordinate_bnds
+[5]   D3,D2    : projection_x_coordinate_bnds
+[6]   D0       : time
+[7]   D1       : projection_y_coordinate
+[8]   D2       : projection_x_coordinate
+
+Dimensions 4 (3 active): 
+  
+  dim   name                   length     min    max start count    dmin   dmax unlim coord_dim 
+  <chr> <chr>                   <dbl>   <dbl>  <dbl> <int> <int>   <dbl>  <dbl> <lgl> <lgl>     
+1 D0    time                        1 1965336 1.97e6     1     1 1965336 1.97e6 FALSE TRUE      
+2 D1    projection_y_coordina…   1450 -199500 1.25e6     1  1450 -199500 1.25e6 FALSE TRUE      
+3 D2    projection_x_coordina…    900 -199500 6.99e5     1   900 -199500 6.99e5 FALSE TRUE      
+  
+Inactive dimensions:
+  
+  dim   name  length   min   max unlim coord_dim 
+  <chr> <chr>  <dbl> <dbl> <dbl> <lgl> <lgl>     
+1 D3    bnds       2     1     2 FALSE FALSE     

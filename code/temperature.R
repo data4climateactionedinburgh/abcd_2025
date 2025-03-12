@@ -15,19 +15,26 @@ data_subdir <- "temperature_HadUK_Grid"
 # Use March as an example data file
 data_filenm_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
 
-# import one month's data
-nctemperature_data <- nc_open(here(data_dir_name, data_subdir, data_filenm_temprtr))
 # use tidync instead of nc_open()
 imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
 
+imported_temperature
 
-
-# call ncvar_get() to access data from a varbl, not working
-#temperature_data |> 
- # ncvar_get(varid = "format")
-
-#print(temperature_data)
+# Import the 2023 annual data file ie not provisional
+# tas_hadukgrid_uk_1km_ann_202301-202312.nc
+data_filenm_temprtr <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
 single_location <- "NT 25981 74498"
+
+
+
+## Old
+# import one month's data
+# nctemperature_data <- nc_open(here(data_dir_name, data_subdir, data_filenm_temprtr))
+# call ncvar_get() to access data from a varbl, not working
+#temperature_data |> 
+# ncvar_get(varid = "format")
+
+#print(temperature_data)
