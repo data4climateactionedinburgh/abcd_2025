@@ -15,14 +15,17 @@ data_subdir <- "temperature_HadUK_Grid"
 # Use March as an example data file
 data_filenm_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
 
+# Or the annual one: 
+# Import the 2023 annual data file ie not provisional
+# tas_hadukgrid_uk_1km_ann_202301-202312.nc
+data_filenm_temprtr <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
+
+
 # use tidync instead of nc_open()
 imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
 
 imported_temperature
 
-# Import the 2023 annual data file ie not provisional
-# tas_hadukgrid_uk_1km_ann_202301-202312.nc
-data_filenm_temprtr <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
