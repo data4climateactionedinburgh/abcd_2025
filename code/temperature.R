@@ -32,9 +32,6 @@ cf_data <- CFtime(nc_conn$dim$time$units,
                   nc_conn$dim$time$cal,
                   nc_conn$dim$time$vals)
 
-# Get dates as a vector
-dates_v <- CFtimestamp(cf_data)
-
 
 
 
@@ -55,7 +52,7 @@ imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temp
 # # Use CFtime to read in the time dimension from the file.
 # cf <- CFtime(nc$dim$time$units, nc$dim$time$calendar, nc$dim$time$vals)
 # 
-# # Get the dates as a character vector
+# # [BAD - gets a single timestamp as a char with deprecated function] Get the dates as a character vector
 # dates <- CFtimestamp(cf)
 # 
 # # The "geo_region" variable has the names of the administrative units
