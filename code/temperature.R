@@ -19,6 +19,7 @@ data_subdir <- "temperature_HadUK_Grid"
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
 single_location_gridref <- "NT 25981 74498"
+# Cannot find variable for gridref, so use lat and longitude
 single_location_latlong <- c(55.91174,-3.27710)
 
 # 2023 Annual data
