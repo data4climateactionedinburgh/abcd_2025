@@ -18,7 +18,8 @@ data_subdir <- "temperature_HadUK_Grid"
 
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
-single_location <- "NT 25981 74498"
+single_location_gridref <- "NT 25981 74498"
+single_location_latlong <- c(55.91174,-3.27710)
 
 # 2023 Annual data
 
@@ -27,7 +28,8 @@ single_location <- "NT 25981 74498"
 filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
 
-
+# Cannot find a gridreference variable to use to filter / slice data. 
+# Whereas, there are lat and longitude fields in both annual and month files. 
 
 
 
