@@ -28,10 +28,6 @@ filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
 
 
-cf_data <- CFtime(nc_conn$dim$time$units,
-                  nc_conn$dim$time$cal,
-                  nc_conn$dim$time$vals)
-
 
 
 
@@ -45,35 +41,3 @@ imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temp
 
 
 
-
-# ### solution for the time fields from stackoverflow
-# nc <- nc_open("./tasmin_hadukgrid_uk_region_day_19600101-20211231.nc")
-# 
-# # Use CFtime to read in the time dimension from the file.
-# cf <- CFtime(nc$dim$time$units, nc$dim$time$calendar, nc$dim$time$vals)
-# 
-# # [BAD - gets a single timestamp as a char with deprecated function] Get the dates as a character vector
-# dates <- CFtimestamp(cf)
-# 
-# # The "geo_region" variable has the names of the administrative units
-# region <- ncvar_get(nc, "geo_region")
-# 
-# # Read the data, transpose to get regions in columns and dates in rows
-# tasmin <- t(ncvar_get(nc, "tasmin"))
-# nc_close(nc)
-# 
-# # Set the dimnames on the array
-# dimnames(tasmin) <- list(dates, region)
-# 
-# # Convert the array to a data.frame
-# tasmin <- as.data.frame(tasmin)
-
-
-## Old
-# import one month's data
-# nctemperature_data <- nc_open(here(data_dir_name, data_subdir, data_filenm_temprtr))
-# call ncvar_get() to access data from a varbl, not working
-#temperature_data |> 
-# ncvar_get(varid = "format")
-
-#print(temperature_data)
