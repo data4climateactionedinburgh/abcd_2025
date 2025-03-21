@@ -1,4 +1,6 @@
-# README documentation - temperature data files #
+# README documentation 
+
+## Temperature data files #
 
 The 2024 monthly temperature data files were downloaded from the Met Office Hadley 
 Centre HadUK-Grid in February 2025 (Hollis et al. 2019). They were made 
@@ -20,6 +22,10 @@ tas_hadukgrid_uk_1km_ann_202301-202312.nc
 Analysis - use CRAN packages - netcdf is a binary file format of course. 
 https://cran.r-project.org/web/packages/ncdf4/index.html
 https://cran.r-project.org/web/packages/ncdf4.helpers/index.html 
+
+## Approach
+
+https://ropensci.org/blog/2019/11/05/tidync/
 
 ## References ## 
 Hollis, D, McCarthy, M, Kendon, M, Legg, T and Simpson, I (2019), HadUK-Grid - 

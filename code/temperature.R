@@ -3,34 +3,73 @@
 # Read in the twelve files for each month's data from HadUK grid. 
 
 library(ncdf4)
-library(ncdf4.helpers)
-library(tidync)
+#library(ncdf4.helpers)
+library(tidync) 
 library(here)
+library(CFtime) #Climate and Forecast metadata conventions
+
+# Plot a chart of the daily temperature in Edinburgh in 2023 and 2024.
 
 # Data from Met Office's HadUK Grid, released by Met Office under the OGL 
 # - see README.md for further details. 
 
 data_dir_name <- "open_data" 
 data_subdir <- "temperature_HadUK_Grid"
-# Use March as an example data file
-data_filenm_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
-
-# Or the annual one: 
-# Import the 2023 annual data file ie not provisional
-# tas_hadukgrid_uk_1km_ann_202301-202312.nc
-data_filenm_temprtr <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
-
-
-# use tidync instead of nc_open()
-imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
-
-imported_temperature
-
 
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
 single_location <- "NT 25981 74498"
 
+# 2023 Annual data
+
+# Import the 2023 annual data file ie not provisional
+# tas_hadukgrid_uk_1km_ann_202301-202312.nc
+filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
+nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
+
+
+cf_data <- CFtime(nc_conn$dim$time$units,
+                  nc_conn$dim$time$cal,
+                  nc_conn$dim$time$vals)
+
+# Get dates as a vector
+dates_v <- CFtimestamp(cf_data)
+
+
+
+
+
+# 2024 monthly provisional data 
+# Use March as an example data file
+data_filenm_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
+
+# try using tidync instead of nc_open()
+imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
+
+
+
+
+# ### solution for the time fields from stackoverflow
+# nc <- nc_open("./tasmin_hadukgrid_uk_region_day_19600101-20211231.nc")
+# 
+# # Use CFtime to read in the time dimension from the file.
+# cf <- CFtime(nc$dim$time$units, nc$dim$time$calendar, nc$dim$time$vals)
+# 
+# # Get the dates as a character vector
+# dates <- CFtimestamp(cf)
+# 
+# # The "geo_region" variable has the names of the administrative units
+# region <- ncvar_get(nc, "geo_region")
+# 
+# # Read the data, transpose to get regions in columns and dates in rows
+# tasmin <- t(ncvar_get(nc, "tasmin"))
+# nc_close(nc)
+# 
+# # Set the dimnames on the array
+# dimnames(tasmin) <- list(dates, region)
+# 
+# # Convert the array to a data.frame
+# tasmin <- as.data.frame(tasmin)
 
 
 ## Old
