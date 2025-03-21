@@ -34,10 +34,10 @@ nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
 
 # 2024 monthly provisional data 
 # Use March as an example data file
-data_filenm_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
+data_filenm_month_temprtr <- "tas_hadukgrid_uk_1km_mon_202403.nc"
 
 # try using tidync instead of nc_open()
-imported_temperature <- tidync(here(data_dir_name, data_subdir, data_filenm_temprtr))
+tidy_temperature_conn <- tidync(here(data_dir_name, data_subdir, data_filenm_month_temprtr))
 
 
 
