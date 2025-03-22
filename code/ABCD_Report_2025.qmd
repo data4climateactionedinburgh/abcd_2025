@@ -59,7 +59,7 @@ However, below, the classic, distinctive and memorable dataviz uses only the col
 
 [![Warming stripes, Scotland's average temperature 1884 to 2024](images/EUROPE-United_Kingdom-Scotland-1884-2024-MO.png){fig-alt="Warming strips depicting rising average temperatures in Scotland"}](https://showyourstripes.info/s/europe/unitedkingdom/scotland)
 
-![Manually added grid lines show current temperature difference](images/annotated EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Yellow lines added to the bar chart for Edinburgh trace the point on the axis corresponding to temperature differences for 2022 and 2024"}
+![Manually added grid lines show current temperature difference](images/annotated%20EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Yellow lines added to the bar chart for Edinburgh trace the point on the axis corresponding to temperature differences for 2022 and 2024"}
 
 # Rainfall
 
