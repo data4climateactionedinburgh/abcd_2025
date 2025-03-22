@@ -27,40 +27,30 @@ This report is an open science project - the data, code and text are all being p
 
 Any amendments will be visible in this same GitHub repo, as commits, in the normal Git version control way. This report file, the text, and all the files in the repository are made available under a Creative Commons Zero v1.0 licence, except of course those subject to ownership by the respective data providers. The files created by D4CAE are thus placed in the public domain, and may be copied, adapted and redistributed without condition. If you wish to cite this work, please cite Data 4 Climate Action Edinburgh as the author.
 
-## The group 
+## The group
 
 D4CAE was set up by Pauline Ward, who is also the main contributor to this report. You can find our blog and contact details on our website:
 
 <https://data-4-climate-action-edinburgh.github.io/home/>
 
-
-
 # Temperature
 
-The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the 0.5 to 1.0 degrees celsius anomaly relating to the 1991 to 2020 period. 
+The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the 0.5 to 1.0 degrees celsius anomaly relating to the 1991 to 2020 period.
 
+According to the Met Office's Local Climate Action Tool, the projected temperature increase for the City of Edinburgh, based on current policies, by 2070 is 2.83 degrees celsius.
 
-# Rainfall 
+# [![temperature and rainfall projected change by 2070](images/LCAT 4 in 1 infographic Screenshot 2025-03-22 135250.png)](https://www.lcat.uk/)
 
-# Travel 
+https://www.lcat.uk/
 
-# Climate action 
+# Rainfall
+
+# Travel
+
+# Climate action
 
 # References
 
-Met Office (2025) "Annual Assessment - 2024" https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf 
+Met Office (2025) "Annual Assessment - 2024" https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf
 
-
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+https://www.lcat.uk/
