@@ -31,7 +31,7 @@ temperature_to_plot <- tibble()
 filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 #nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
 
-temperature_to_plot <- rbind(temperature_to_plot, get_tas_by_period())
+temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_latlong)
 
 # Cannot find a gridreference variable to use to filter / slice data. 
 # Whereas, there are lat and longitude fields in both annual and month files. 
@@ -55,12 +55,12 @@ data_files_months_temprtr <-c("tas_hadukgrid_uk_1km_mon_202401.nc",
                               "tas_hadukgrid_uk_1km_mon_202412.nc"
 )
 
-
-# try using tidync instead of nc_open()
-#tidy_temperature_conn <- tidync(here(data_dir_name, data_subdir, data_filenm_month_temprtr))
-
+for (i in 1:length(data_files_months_temprtr)){ # should be 12(!)
+  rbind(temperature_to_plot, get_tas_from_file(data_files_months_temprtr[i], single_location_latlong) 
+        
+}
 
 # function to return tibble of daily tas values with dates
-get_tas_by_period <- function(filename, single_location_latlong){
+get_tas_from_file <- function(filename, single_location_latlong){
   nc_conn <- nc_open(here(data_dir_name, data_subdir, filename))
 }
