@@ -4,9 +4,9 @@
 
 library(ncdf4)
 #library(ncdf4.helpers)
-library(tidync) 
+#library(tidync) 
 library(here)
-library(CFtime) #Climate and Forecast metadata conventions
+library(tidyverse)
 
 # Plot a chart of the daily temperature in Edinburgh in 2023 and 2024.
 
@@ -23,6 +23,14 @@ single_location_gridref <- "NT 25981 74498"
 single_location_latlong <- c(55.91174,-3.27710)
 
 temperature_to_plot <- tibble()
+
+# function to return tibble of daily tas values with dates
+get_tas_from_file <- function(filename, single_location_latlong){
+  nc_conn <- nc_open(here(data_dir_name, data_subdir, filename))
+  tas_from_file  <- ncvar_get(nc_conn, varid = tas)
+  
+  return(tas_from_file)
+}
 
 # 2023 Annual data
 
@@ -60,7 +68,4 @@ for (i in 1:length(data_files_months_temprtr)){ # should be 12(!)
         
 }
 
-# function to return tibble of daily tas values with dates
-get_tas_from_file <- function(filename, single_location_latlong){
-  nc_conn <- nc_open(here(data_dir_name, data_subdir, filename))
-}
+
