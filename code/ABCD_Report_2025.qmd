@@ -41,9 +41,15 @@ According to the Met Office's Local Climate Action Tool, the projected temperatu
 
 # [![temperature and rainfall projected change by 2070](images/LCAT 4 in 1 infographic Screenshot 2025-03-22 135250.png)](https://www.lcat.uk/)
 
-https://www.lcat.uk/
+https://www.lcat.uk
 
 # Rainfall
+
+The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 12.5% higher than the 1980 level of 2.12mm per day.
+
+[![Projected rainfall in Edinburgh, big increase in 2030](images/LCAT rain decades Screenshot 2025-03-22 141104.png){fig-alt="Bar chart showing rainfall in 1980 at 2.12mm per day, 2030 at 2.37mm per day, 2040 at 2.16, 2050 at 2.03, 2060 at 2.17 and 2070 at 2.12mm per day."}](https://www.lcat.uk/)
+
+# 
 
 # Travel
 
