@@ -39,7 +39,7 @@ The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/co
 
 According to the Met Office's Local Climate Action Tool, the projected temperature increase for the City of Edinburgh, based on current policies, by 2070 is 2.83 degrees celsius.
 
-# [![temperature and rainfall projected change by 2070](images/LCAT 4 in 1 infographic Screenshot 2025-03-22 135250.png)](https://www.lcat.uk/)
+# [![temperature and rainfall projected change by 2070](images/LCAT%204%20in%201%20infographic%20Screenshot%202025-03-22%20135250.png)](https://www.lcat.uk/)
 
 https://www.lcat.uk
 
@@ -47,9 +47,23 @@ https://www.lcat.uk
 
 The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 12.5% higher than the 1980 level of 2.12mm per day.
 
-[![Projected rainfall in Edinburgh, big increase in 2030](images/LCAT rain decades Screenshot 2025-03-22 141104.png){fig-alt="Bar chart showing rainfall in 1980 at 2.12mm per day, 2030 at 2.37mm per day, 2040 at 2.16, 2050 at 2.03, 2060 at 2.17 and 2070 at 2.12mm per day."}](https://www.lcat.uk/)
+[![Projected rainfall in Edinburgh, big increase in 2030](images/LCAT%20rain%20decades%20Screenshot%202025-03-22%20141104.png){fig-alt="Bar chart showing rainfall in 1980 at 2.12mm per day, 2030 at 2.37mm per day, 2040 at 2.16, 2050 at 2.03, 2060 at 2.17 and 2070 at 2.12mm per day."}](https://www.lcat.uk/)
 
-# 
+## Flood risk
+
+While [flood risk maps are available to view via the website of the Scottish Environment Protection Agency SEPA](https://scottishepa.maps.arcgis.com/apps/webappviewer/index.html?id=3098bbef089c4dd79e5344a0e1e7c91c&showLayers=FloodMapsBasic_2743;FloodMapsBasic_2743_1;FloodMapsBasic_2743_2;FloodMapsBasic_2743_3;FloodMapsBasic_2743_5;FloodMapsBasic_2743_6;FloodMapsBasic_2743_7;FloodMapsBasic_2743_9;FloodMapsBasic_2743_10;FloodMapsBasic_2743_11;FloodMapsBasic_2743_12;FloodMapsBasic_2743_13;FloodMapsBasic_2743;FloodMapsBasic_2743_1;FloodMapsBasic_2743_2;FloodMapsBasic_2743_3;FloodMapsBasic_2743_5;FloodMapsBasic_2743_6;FloodMapsBasic_2743_7;FloodMapsBasic_2743_9;FloodMapsBasic_2743_10;FloodMapsBasic_2743_11;FloodMapsBasic_2743_12;FloodMapsBasic_2743_14) , it has not been possible to include a copy here, nor in a video, as they are copyright, and the copyright is owned by Ordnance Survey, and copying is strictly prohibited - see https://flood-map-for-planning.service.gov.uk/os-terms .
+
+SEPA's Flood Maps show some alarming features:
+
+-   a high level of surface water flooding risk around Waverley train station and many other areas across the city of Edinburgh ('high likelihood' defined as a 10% risk in a given year).
+
+-   a high level of river flood risk along the River Almond ('high' means 10% likelihood).
+
+-   a high level of coastal flooding risk (ie 10% in a given year) along the entirety of the shoreline of the Firth of Forth, from Musselburgh, through Leith to South Queensferry.
+
+(SEPA Flood Maps)
+
+Please see
 
 # Travel
 
@@ -60,3 +74,22 @@ The Met Office LCAT tool shows that by 2030, under the existing policies, Edinbu
 Met Office (2025) "Annual Assessment - 2024" https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf
 
 https://www.lcat.uk/
+
+https://scottishepa.maps.arcgis.com/apps/webappviewer/index.html?id=3098bbef089c4dd79e5344a0e1e7c91c&showLayers=FloodMapsBasic_2743;FloodMapsBasic_2743_1;FloodMapsBasic_2743_2;FloodMapsBasic_2743_3;FloodMapsBasic_2743_5;FloodMapsBasic_2743_6;FloodMapsBasic_2743_7;FloodMapsBasic_2743_9;FloodMapsBasic_2743_10;FloodMapsBasic_2743_11;FloodMapsBasic_2743_12;FloodMapsBasic_2743_13;FloodMapsBasic_2743;FloodMapsBasic_2743_1;FloodMapsBasic_2743_2;FloodMapsBasic_2743_3;FloodMapsBasic_2743_5;FloodMapsBasic_2743_6;FloodMapsBasic_2743_7;FloodMapsBasic_2743_9;FloodMapsBasic_2743_10;FloodMapsBasic_2743_11;FloodMapsBasic_2743_12;FloodMapsBasic_2743_14
+
+SEPA Flood Maps: SEPA gratefully acknowledges the cooperation and input that various parties have provided, including inter alia, the following organisations:
+
+Ordnance Survey\
+Flood maps are based upon Ordnance Survey material with the permission of Ordnance Survey on behalf of the Controller of Her Majesty’s Stationery Office © Crown Copyright. Any unauthorised reproduction infringes Crown copyright and may lead to prosecution or civil proceedings. SEPA Licence number AC0000825128 (2025).
+
+The Centre for Ecology and Hydrology Some features of these maps are based upon digital spatial data licensed from the Centre for Ecology and Hydrology © NERC (CEH) and third party licensors.
+
+The Met Office Data provided by The Met Office has been used under licence in some areas of flood risk information production. ©Crown Copyright (2019), the Met Office.
+
+The James Hutton Institute Data provided under licence from the James Hutton Institute has been applied in production of flood risk management information. Copyright © The James Hutton Institute and third party licensors.
+
+British Geological Survey Flood risk information has been derived from BGS digital data under licence. British Geological Survey © NERC
+
+Local authorities SEPA acknowledges the provision of flood models and other supporting data and information from local authorities in Scotland and their collaboration in the production of flood risk management information.
+
+Scottish Water SEPA acknowledges the inclusion of surface water flooding data generated by Scottish Water in preparation of flood risk information
