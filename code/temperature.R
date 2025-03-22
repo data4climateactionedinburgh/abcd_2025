@@ -27,7 +27,8 @@ temperature_to_plot <- tibble()
 # function to return tibble of daily tas values with dates
 get_tas_from_file <- function(filename, single_location_latlong){
   nc_conn <- nc_open(here(data_dir_name, data_subdir, filename))
-  tas_from_file  <- ncvar_get(nc_conn, varid = tas)
+  tas_from_file$tas  <- ncvar_get(nc_conn, varid = tas)
+  tas_from_file$time  <- ncvar_get(nc_conn, varid = time)
   
   return(tas_from_file)
 }
@@ -43,6 +44,7 @@ temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_
 
 # Cannot find a gridreference variable to use to filter / slice data. 
 # Whereas, there are lat and longitude fields in both annual and month files. 
+# Time units: hours since 1800-01-01 00:00:00
 
 
 
@@ -68,4 +70,6 @@ for (i in 1:length(data_files_months_temprtr)){ # should be 12(!)
         
 }
 
-
+temperature_data_csv_filename <- "my_csv_temperature.csv"
+write.csv2(temperature_to_plot, temperature_data_csv_filename)
+plot(temperature_to_plot)

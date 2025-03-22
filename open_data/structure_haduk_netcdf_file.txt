@@ -27,3 +27,75 @@ Inactive dimensions:
   dim   name  length   min   max unlim coord_dim 
   <chr> <chr>  <dbl> <dbl> <dbl> <lgl> <lgl>     
 1 D3    bnds       2     1     2 FALSE FALSE     
+
+Annual file: 
+4 dimensions:
+        time  Size:1 
+            axis: T
+            bounds: time_bnds
+         ****   units: hours since 1800-01-01 00:00:00 *****
+            standard_name: time
+            calendar: standard
+        projection_y_coordinate  Size:1450 
+            axis: Y
+            bounds: projection_y_coordinate_bnds
+            units: m
+            standard_name: projection_y_coordinate
+        projection_x_coordinate  Size:900 
+            axis: X
+            bounds: projection_x_coordinate_bnds
+            units: m
+            standard_name: projection_x_coordinate
+        bnds  Size:2 (no dimvar)
+
+
+## monthly 
+ standard_name: air_temperature
+            long_name: Mean air temperature
+            units: degC
+            description: Mean air temperature
+            label_units: °C
+            level: 1.5m
+            plot_label: Mean air temperature at 1.5m (°C)
+            cell_methods: time: mid_range within days time: mean over days
+            grid_mapping: transverse_mercator
+            coordinates: latitude longitude month_number season_year
+        int transverse_mercator[]   (Contiguous storage)  
+            grid_mapping_name: transverse_mercator
+            longitude_of_prime_meridian: 0
+            semi_major_axis: 6377563.396
+            semi_minor_axis: 6356256.909
+            longitude_of_central_meridian: -2
+            latitude_of_projection_origin: 49
+            false_easting: 4e+05
+            false_northing: -1e+05
+            scale_factor_at_central_meridian: 0.9996012717
+        8 byte int time_bnds[bnds,time]   (Contiguous storage)  
+        double projection_y_coordinate_bnds[bnds,projection_y_coordinate]   (Contiguous storage)  
+        double projection_x_coordinate_bnds[bnds,projection_x_coordinate]   (Contiguous storage)  
+        double latitude[projection_x_coordinate,projection_y_coordinate]   (Contiguous storage)  
+            units: degrees_north
+            standard_name: latitude
+        double longitude[projection_x_coordinate,projection_y_coordinate]   (Contiguous storage)  
+            units: degrees_east
+            standard_name: longitude
+            
+            ..
+            4 dimensions:
+        time  Size:1 
+            axis: T
+            bounds: time_bnds
+       ****     units: hours since 1800-01-01 00:00:00 *****
+            standard_name: time
+            calendar: standard
+        projection_y_coordinate  Size:1450 
+            axis: Y
+            bounds: projection_y_coordinate_bnds
+            units: m
+            standard_name: projection_y_coordinate
+        projection_x_coordinate  Size:900 
+            axis: X
+            bounds: projection_x_coordinate_bnds
+            units: m
+            standard_name: projection_x_coordinate
+        bnds  Size:2 (no dimvar)
