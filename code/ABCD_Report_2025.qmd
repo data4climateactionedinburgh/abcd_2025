@@ -86,6 +86,12 @@ Rising sea levels will increase the risk of coastal flooding.
 
 # Travel
 
+Active travel such as cycling helps reduce greenhouse gas emissions. 
+
+Cycle counter data provides us with a sample of the bicycle journeys taken. There are a large number of cycle counters across the city. The data is available under an open licence from [Cycling Open Data's usmart site](https://usmart.io/org/cyclingscotland/). The chart of the total from all the counters in Edinburgh shows the number of bicycles recorded fluctuates with the seasons, peaking each summer and dropping in the winter. The chart, shows an increase in cycling in the city in 2024 compared to 2022 and 2023. This data visualisation was coded in R (by Pauline) using the ggplot package - the code is available on our GitHub repo, along with a copy of the downloaded data: https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/code/active_travel.R 
+
+[![Cycling](images/.png){fig-alt="Scatter plot showing cycling total for all counters in Edinburgh."}]
+
 # Climate action
 
 # References
@@ -120,3 +126,6 @@ SEPA Flood Maps: SEPA gratefully acknowledges the cooperation and input that var
 Climate Stripes, University of Reading, Ed Hawkins <https://www.reading.ac.uk/planet/climate-resources/climate-stripes>
 
 <https://showyourstripes.info/s/europe/unitedkingdom/scotland>
+
+Cycling Open Data, Cycling Scotland
+<https://usmart.io/org/cyclingscotland/>

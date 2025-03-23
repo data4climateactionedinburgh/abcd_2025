@@ -36,8 +36,13 @@ plot(cycling_plot_data)
   
 daily_cycling_plot <- cycling_plot_data |>
   ggplot(aes(x = CountDate, y = daily_total)) +
-  geom_point() +
-  geom_smooth(method = "lm")
+  geom_point(shape=1) +
+  theme_minimal() +
+  labs(title="Daily cycling totals 2016 to 2024",
+       subtitle = "Cycle counter data from Cycling Open Data",
+       alt = "Scatter plot showing cycle counts daily totals",
+       x = "Date",
+       y = "Daily total") 
 
 daily_cycling_plot
 
