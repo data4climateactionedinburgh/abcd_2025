@@ -13,7 +13,7 @@ CEC_daily_cycling_COD_alldates <- read_csv(
 # data cleaning
 # remove outliers 
 daily_cycling <- CEC_daily_cycling_COD_alldates |>
-  filter(!is.na(withinExpectedLimits))|> # approx 30,000 rows from 200,000
+  filter(!(withinExpectedLimits == "false"))|> # approx 30,000 rows from 200,000
   rename(cycles_count = count) # rename to avoid confusion with R keyword 'count'
 
 # Check dates are consistent
