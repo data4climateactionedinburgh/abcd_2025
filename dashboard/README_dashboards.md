@@ -11,3 +11,6 @@ setwd("dashboard")
 library(shiny)
 runApp()
 
+When ready to publish: 
+
+deployApp()

@@ -1,9 +1,13 @@
 library(shiny)
 library(ggplot2)
+library(tidyverse)
 
 # adapting for rainfall plot with SEPA data for edinburgh
 # based on Posit demo using diamonds dataset
 function(input, output) {
+  
+  rainfall_tbl <- tibble()
+  stations <- read.csv2("../open_data/rainfall/rain_stations_edinburgh.txt")
   
   dataset <- reactive({
     diamonds[sample(nrow(diamonds), input$sampleSize),]
