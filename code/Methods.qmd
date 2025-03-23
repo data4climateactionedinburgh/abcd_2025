@@ -1,17 +1,17 @@
+# Methods
 
+In the first instance, I'll use R along with the OpenAir tools, see if that's possible.
 
+## Temperature
 
-# Methods 
+Drew two lines onto the temperature bar chart to read the axis.
 
-In the first instance, I'll use R along with the OpenAir tools, see if that's possible. 
+[![Temperature bar chart with manually added grid lines](images/annotated EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Two lines on the bar chart show temperature increase of 1.3 degrees by 2022 and 1.0 by 2024."}](https://www.reading.ac.uk/planet/climate-resources/climate-stripes)
 
-## Data Sources 
+# Data Sources
 
-SAQD - Scottish Air Quality Database, Scottish Government
-https://www.scottishairquality.scot/ 
+SAQD - Scottish Air Quality Database, Scottish Government https://www.scottishairquality.scot/
 
-OpenAir data analysis tools, provided alongside Scottish Air Quality data, Scottish Government 
-https://www.scottishairquality.scot/data/openair 
+OpenAir data analysis tools, provided alongside Scottish Air Quality data, Scottish Government https://www.scottishairquality.scot/data/openair
 
-UK NAEI - National Atmospheric Emissions Inventory 
-https://naei.beis.gov.uk/
+UK NAEI - National Atmospheric Emissions Inventory https://naei.beis.gov.uk/
