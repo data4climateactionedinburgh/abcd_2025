@@ -2,4 +2,3 @@
 
 library(tidyverse)
 library(here)
-library(leaflet)
