@@ -7,6 +7,7 @@ library(ncdf4)
 #library(tidync) 
 library(here)
 library(tidyverse)
+library(stringi)
 
 # Plot a chart of the daily temperature in Edinburgh in 2023 and 2024.
 
@@ -54,20 +55,24 @@ temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_
 
 
 # 2024 monthly provisional data 
-# Use March as an example data file
-data_files_months_temprtr <-c("tas_hadukgrid_uk_1km_mon_202401.nc",
-                              "tas_hadukgrid_uk_1km_mon_202402.nc",
-                              "tas_hadukgrid_uk_1km_mon_202403.nc",
-                              "tas_hadukgrid_uk_1km_mon_202404.nc",
-                              "tas_hadukgrid_uk_1km_mon_202405.nc",
-                              "tas_hadukgrid_uk_1km_mon_202406.nc",
-                              "tas_hadukgrid_uk_1km_mon_202407.nc",
-                              "tas_hadukgrid_uk_1km_mon_202408.nc",
-                              "tas_hadukgrid_uk_1km_mon_202409.nc",
-                              "tas_hadukgrid_uk_1km_mon_202410.nc",
-                              "tas_hadukgrid_uk_1km_mon_202411.nc",
-                              "tas_hadukgrid_uk_1km_mon_202412.nc"
-)
+# data_files_months_temprtr <-c("tas_hadukgrid_uk_1km_mon_202401.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202402.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202403.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202404.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202405.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202406.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202407.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202408.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202409.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202410.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202411.nc",
+#                               "tas_hadukgrid_uk_1km_mon_202412.nc"
+#)
+
+# use dir() to get filenames, similar to glob
+files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
+data_files_months_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tas_hadukgrid_uk_1km_mon") 
+
 
 for (i in 1:length(data_files_months_temprtr)){ # should be 12(!)
   rbind(temperature_to_plot, get_tas_from_file(data_files_months_temprtr[i], single_location_latlong) 
