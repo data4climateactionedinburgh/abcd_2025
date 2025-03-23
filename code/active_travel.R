@@ -13,7 +13,7 @@ CEC_daily_cycling_COD_alldates <- read_csv(
 # data cleaning
 # remove outliers 
 daily_cycling <- CEC_daily_cycling_COD_alldates |>
-  filter(!(withinExpectedLimits == "false"))|> # approx 30,000 rows from 200,000
+  filter(!(withinExpectedLimits == "false"))|> # approx 36,000 rows from 200,000
   rename(cycles_count = count) # rename to avoid confusion with R keyword 'count'
 
 # Check dates are consistent
@@ -26,13 +26,16 @@ daily_cycling <- daily_cycling |>
 # [1] 1
 
 # Plot
-cycling_plot <- daily_cycling |>
+cycling_plot_data <- daily_cycling |>
   select(endTime, cycles_count)|>
   mutate(CountDate = as.Date(endTime)) |>
   group_by(CountDate) |>
-  summarise(sum(cycles_count)) 
+  summarise(daily_total = sum(cycles_count)) 
 
-  plot(cycling_plot)
+  plot(cycling_plot_data)
+  
+daily_cycling_plot <- cycling_plot_data |>
+  ggplot(aes(x = CountDate, y = sum))
 
 
 # WALKING
