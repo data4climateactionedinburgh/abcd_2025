@@ -7,7 +7,7 @@ library(tidyverse)
 function(input, output) {
   
   rainfall_tbl <- tibble()
-  stations <- read.csv2("../open_data/rainfall/rain_stations_edinburgh.txt")
+  stations <- read_csv("../open_data/rainfall/rain_stations_edinburgh.txt")
   
   dataset <- reactive({
     diamonds[sample(nrow(diamonds), input$sampleSize),]
