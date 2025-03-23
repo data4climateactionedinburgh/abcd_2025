@@ -10,6 +10,16 @@ CEC_daily_cycling_COD_alldates <- read_csv(
                                           startTime = col_character(), update = col_character(), 
                                           validCountsDetected = col_character(), 
                                           withinExpectedLimits = col_character()))
+
+# How many counters? 
+length(unique(CEC_daily_cycling_COD_alldates[["siteID"]]))
+
+# Where are the counters? 
+unique(CEC_daily_cycling_COD_alldates[["location"]])
+
+# Data providers
+unique(CEC_daily_cycling_COD_alldates[["provider"]])
+
 # data cleaning
 # remove outliers 
 daily_cycling <- CEC_daily_cycling_COD_alldates |>
