@@ -32,11 +32,14 @@ cycling_plot_data <- daily_cycling |>
   group_by(CountDate) |>
   summarise(daily_total = sum(cycles_count)) 
 
-  plot(cycling_plot_data)
+plot(cycling_plot_data)
   
 daily_cycling_plot <- cycling_plot_data |>
-  ggplot(aes(x = CountDate, y = sum))
+  ggplot(aes(x = CountDate, y = daily_total)) +
+  geom_point() +
+  geom_smooth(method = "lm")
 
+daily_cycling_plot
 
 # WALKING
 CEC_daily_walking_COD_alldates <- read_csv(
