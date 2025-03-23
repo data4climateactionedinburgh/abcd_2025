@@ -3,6 +3,8 @@ title: "ABCD Report 2025"
 author: "D4CAE - Data 4 Climate Action Edinburgh"
 format: html
 editor: visual
+toc: true
+toc-depth: 2
 ---
 
 ## Analysis By the Collective: D4CAE (Data for Climate Action Edinburgh)
@@ -11,7 +13,6 @@ editor: visual
 
 Published: DRAFT 22 March 2025
 
-add table of contents!!!
 
 # Introduction
 
