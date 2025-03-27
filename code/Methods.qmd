@@ -4,6 +4,8 @@ In the first instance, I'll use R along with the OpenAir tools, see if that's po
 
 ## Temperature
 
+Some key figures about predicted change came from the Met Office website LCAT tool, where the user can specify Edinburgh (and/or Scotland) and the tool generates a detailed report with stats for that area.
+
 Drew two lines onto the temperature bar chart to read the axis.
 
 [![Temperature bar chart with manually added grid lines](images/annotated%20EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Two lines on the bar chart show temperature increase of 1.3 degrees by 2022 and 1.0 by 2024."}](https://www.reading.ac.uk/planet/climate-resources/climate-stripes)
