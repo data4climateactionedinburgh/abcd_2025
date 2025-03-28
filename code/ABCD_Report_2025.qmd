@@ -107,8 +107,14 @@ This data visualisation was coded in R (by Pauline) using the ggplot package - t
 
 # Climate action
 
-ECCAN. 
+## ECCAN ## 
 
+
+## City of Edinburgh Council ##
+
+The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 climate duties report provides the following statement on the approach and governance in place with respect to climate change: 
+
+"The City of Edinburgh Council declared a climate emergency in February 2019, set a new target for the city to be net zero by 2030 and declared a nature emergency in 2023. To achieve this net zero target and adapt the city to the impacts of climate change, a 2030 Climate Strategy and Implementation Plan was approved in November 2021. The Strategy contains Council and citywide governance and reporting structures and strategic actions to achieve the 2030 net zero target and adapt the city. A Council Emissions Reduction Plan (CERP) (approved November 2021) outlines a phased action plan for reducing Council corporate emissions emissions. A CERP Board,  established in 2022,  provides strategic leadership and operational accountability for delivery of the Council’s organisational emissions target of net zero by 2030. It is chaired by the Service Director for Sustainable Development and includes Council’s key service areas for each of the strands of the plan (Buildings, Fleet, Waste, Human Resources and Procurement)." 
 
 
 # References
