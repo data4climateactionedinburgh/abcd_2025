@@ -1,6 +1,6 @@
 # Methods
 
-In the first instance, I'll use R along with the OpenAir tools, see if that's possible.
+In the first instance, I'll use R along with the OpenAir tools, see if that's possible. As a citizen science group, this Methods document is written for a citizen scientist audience, to share learning about working with climate data.
 
 ## Temperature
 
@@ -9,6 +9,8 @@ Some key figures about predicted change came from the Met Office website LCAT to
 Drew two lines onto the temperature bar chart to read the axis.
 
 [![Temperature bar chart with manually added grid lines](images/annotated%20EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Two lines on the bar chart show temperature increase of 1.3 degrees by 2022 and 1.0 by 2024."}](https://www.reading.ac.uk/planet/climate-resources/climate-stripes)
+
+We did attempt to extract temperature data from the CEDA archive. This was quite challenging, despite starting with a good level of R knowledge. The Hadley UK grid data is in netcdf format, a very well-established standard in the academic community. However, there was a surprising lack of good resources for help on how to pick out temperatures for a given geographical location, and date, using R. There's definitely an opportunity for someone (maybe Hadley Centre / CEDA themselves) to signpost or create a simple exemplar or even a tutorial.
 
 # Data Sources
 
