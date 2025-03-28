@@ -28,11 +28,15 @@ This report is an open science project - the data, code and text are all being p
 
 Any amendments will be visible in this same GitHub repo, as commits, in the normal Git version control way. This report file, the text, and all the files in the repository are made available under a Creative Commons Zero v1.0 licence, except of course those subject to ownership by the respective data providers. The files created by D4CAE are thus placed in the public domain, and may be copied, adapted and redistributed without condition. If you wish to cite this work, please cite Data 4 Climate Action Edinburgh as the author.
 
-## The group
+## About the group
 
 D4CAE was set up by Pauline Ward, who is also the main contributor to this report. You can find our blog and contact details on our website:
 
 <https://data-4-climate-action-edinburgh.github.io/home/>
+
+Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: 
+ - supported ECCAN to process member data, and to select software for this purpose; 
+ - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report. 
 
 # In a nutshell
 
@@ -100,6 +104,10 @@ This data visualisation was coded in R (by Pauline) using the ggplot package - t
 ![Cycling counter data, peaking in summer and falling in winter](images/Daily_total_cycling_2016_to_2024.png){fig-alt="Scatter plot showing cycling total for all counters in Edinburgh."}
 
 # Climate action
+
+ECCAN. 
+
+
 
 # References
 
