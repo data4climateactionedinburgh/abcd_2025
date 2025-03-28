@@ -37,6 +37,8 @@ D4CAE was set up by Pauline Ward, who is also the main contributor to this repor
 Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: 
  - supported ECCAN to process member data, and to select software for this purpose; 
  - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report. 
+ 
+As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust). 
 
 # In a nutshell
 
