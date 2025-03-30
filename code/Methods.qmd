@@ -40,7 +40,7 @@ We knew from the one-off survey we ran at Edinburgh Climate Festival 2023 that t
 
 D4CAE is grateful to the following people for sharing ideas and signposting data sources that contributed to this report:
 
-ECCAN - Edinburgh Communities Climate Action Network; Bruce Whyte; Bella Tortora Brayda di Belvedere.
+ECCAN - Edinburgh Communities Climate Action Network; Bruce Whyte; Isabella Tortora Brayda di Belvedere.
 
 Pauline Ward generated the data visualisations using online tools and coding in R. Pauline has also written the copy. Yes, I do feel a bit funny writing about myself in the third person. It is hoped a greater number of the group's existing and new volunteers will be involved more directly in producing future editions.
 
