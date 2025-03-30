@@ -51,3 +51,5 @@ SAQD - Scottish Air Quality Database, Scottish Government https://www.scottishai
 OpenAir data analysis tools, provided alongside Scottish Air Quality data, Scottish Government https://www.scottishairquality.scot/data/openair
 
 UK NAEI - National Atmospheric Emissions Inventory https://naei.beis.gov.uk/
+
+The Met Office Local Authority Climate Explore tool allows the user to easily generate a very detailed, well-presented, snappy report about their chosen local authority. I sent feedback explaining that licensing restrictions were a limit on the usefulness of the output, since we would want to share the content, to raise awareness.

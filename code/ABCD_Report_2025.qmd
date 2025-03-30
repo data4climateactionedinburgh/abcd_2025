@@ -18,7 +18,9 @@ Published: DRAFT 22 March 2025
 
 ## Scope
 
-The aim of this report is to present key data on climate action happening, and climate impacts on, the city of Edinburgh in Scotland. As the output of a small voluntary local group, D4CAE, the scope is modest, addressing a handful of aspects of climate action and climate impacts. This year's report, being the very first year, in some ways focuses mainly on establishing baselines for some data. 
+The aim of this report is to present key data on climate action happening, and climate impacts on, the city of Edinburgh in Scotland. We hope that by raising awareness of local effects of climate change, we can contribute to the impetus to support climate action. And that we can highlight ongoing climate action, that gives us hope. 
+
+As the output of a small voluntary local group, D4CAE, the scope of this report is modest, addressing a handful of aspects of climate action and climate impacts. This year's report, being the very first year, in some ways focuses mainly on finding and documenting data sources, and establishing tools for data extraction, and establishing baselines for some data. 
 
 ## Open access
 
