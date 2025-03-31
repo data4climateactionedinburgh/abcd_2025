@@ -6,7 +6,7 @@ Data visualisations for this report have been produced using online tools and co
 
 ## Temperature
 
-Some key figures about predicted change came from the Met Office website LCAT tool, where the user can specify Edinburgh (and/or Scotland) and the tool generates a detailed report with stats for that area.
+Some key figures about predicted change came from the Met Office website LACE and LCAT tools, where the user can specify Edinburgh (and/or Scotland) and the tool generates a detailed report with stats for that area.
 
 Drew two lines onto the temperature bar chart to read the axis.
 

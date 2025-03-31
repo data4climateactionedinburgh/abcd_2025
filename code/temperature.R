@@ -4,7 +4,7 @@
 
 library(ncdf4)
 #library(ncdf4.helpers)
-#library(tidync) 
+library(RNetCDF)
 library(here)
 library(tidyverse)
 library(stringi)
@@ -20,7 +20,7 @@ data_subdir <- "temperature_HadUK_Grid"
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
 single_location_gridref <- "NT 25981 74498"
-# Cannot find variable for gridref, so use lat and longitude
+# Cannot find variable for gridref, so use lat and longitude, 14 Forth St
 single_location_latlong <- c(55.91174,-3.27710)
 
 # Cannot find a gridreference variable to use to filter / slice data. 
@@ -31,10 +31,13 @@ temperature_to_plot <- tibble()
 
 # function to return tibble of daily tas values with dates
 get_tas_from_file <- function(filename, single_location_latlong){
-  nc_conn <- nc_open(here(data_dir_name, data_subdir, filename))
+  nc_conn <- open.nc(here(data_dir_name, data_subdir, filename))
+  # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
+  # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
+  # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
   tas_from_file <- tibble()
-  tas_from_file$tas  <- ncvar_get(nc_conn, varid = "tas")
-  tas_from_file$time  <- ncvar_get(nc_conn, varid = "time")
+  #tas_from_file$tas  <-  ncvar_get(nc_conn, varid = "tas")
+  #tas_from_file$time  <- ncvar_get(nc_conn, varid = "time")
   
   return(tas_from_file)
 }
@@ -47,11 +50,8 @@ filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 #nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
 
 temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_latlong)
-# Error in `$<-`:
-#   ! Assigned data `ncvar_get(nc_conn, varid = "tas")` must be compatible with existing data.
-# ✖ Existing data has 0 rows.
-# ✖ Assigned data has 900 rows.
-# ℹ Only vectors of size 1 are recycled.
+
+
 
 # 2024 monthly provisional data 
 
