@@ -44,8 +44,10 @@ server <- function(input, output) {
     
     x    <- faithful$waiting
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
-    
-    hist(x, breaks = bins, col = "#5555FF", border = "magenta",
+    # Nice colours to represent rain:
+    # #11AAFF bright blue
+    # #AABBCC bluish grey
+    hist(x, breaks = bins, col = "#11AAFF", border = "#AABBCC",
          xlab = "Waiting time to next eruption (in mins)",
          main = "Histogram of geyser pause times")
     
