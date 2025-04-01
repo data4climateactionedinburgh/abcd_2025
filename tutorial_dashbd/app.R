@@ -47,7 +47,7 @@ server <- function(input, output) {
     
     hist(x, breaks = bins, col = "#5555FF", border = "magenta",
          xlab = "Waiting time to next eruption (in mins)",
-         main = "Histogram of waiting times")
+         main = "Histogram of geyser pause times")
     
   })
   
