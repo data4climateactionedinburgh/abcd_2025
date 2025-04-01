@@ -4,10 +4,13 @@ library(tidyverse)
 
 # adapting for rainfall plot with SEPA data for edinburgh
 # based on Posit demo using diamonds dataset
+
 function(input, output) {
   
   rainfall_tbl <- tibble()
-  stations <- read_csv("../open_data/rainfall/rain_stations_edinburgh.txt")
+  # If below path producing an error, remember to run following in console: 
+  # setwd(dashboard) # as per README_dashboard.md
+  stations <- read_csv("../open_data/rainfall/rain_stations_edinburgh.csv")
   
   dataset <- reactive({
     diamonds[sample(nrow(diamonds), input$sampleSize),]
