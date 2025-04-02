@@ -13,6 +13,7 @@ function(input, output) {
   stations <- read_csv("../open_data/rainfall/rain_stations_edinburgh.csv")
   
   dataset <- reactive({
+    
     diamonds[sample(nrow(diamonds), input$sampleSize),]
   })
   
