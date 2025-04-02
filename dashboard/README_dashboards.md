@@ -14,3 +14,6 @@ runApp()
 When ready to publish: 
 
 deployApp()
+
+Excluded the Torduff data, as it contained over two hundred stations, 
+with just one row each in the CSV, ie different layout to other data files. 

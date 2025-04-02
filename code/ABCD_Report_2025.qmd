@@ -11,14 +11,15 @@ toc-depth: 2
 
 [![](images/logo_organization_trees_bees_PCs_peeps.png){fig-alt="The D4CAE logo depicting people using laptops, a tree, a bee and weather symbols"}](https://data-4-climate-action-edinburgh.github.io/home/)
 
-Published: DRAFT 22 March 2025
-
+Published: DRAFT 2 April 2025
 
 # Introduction
 
 ## Scope
 
-The aim of this report is to present key data on climate action happening, and climate impacts on, the city of Edinburgh in Scotland. As the output of a small voluntary local group, D4CAE, the scope is modest, addressing a handful of aspects of climate action and climate impacts. This year's report, being the very first year, in some ways focuses mainly on establishing baselines for some data. 
+The aim of this report is to present key data on climate action happening, and climate impacts on, the city of Edinburgh in Scotland. We hope that by raising awareness of local effects of climate change, we can contribute to the impetus to support climate action. And that we can highlight ongoing climate action, that gives us hope.
+
+As the output of a small voluntary local group, D4CAE, the scope of this report is modest, addressing a handful of aspects of climate action and climate impacts. This year's report, being the very first year, in some ways focuses mainly on finding and documenting data sources, and establishing tools for data extraction, and establishing baselines for some data.
 
 ## Open access
 
@@ -28,11 +29,15 @@ This report is an open science project - the data, code and text are all being p
 
 Any amendments will be visible in this same GitHub repo, as commits, in the normal Git version control way. This report file, the text, and all the files in the repository are made available under a Creative Commons Zero v1.0 licence, except of course those subject to ownership by the respective data providers. The files created by D4CAE are thus placed in the public domain, and may be copied, adapted and redistributed without condition. If you wish to cite this work, please cite Data 4 Climate Action Edinburgh as the author.
 
-## The group
+## About the group
 
 D4CAE was set up by Pauline Ward, who is also the main contributor to this report. You can find our blog and contact details on our website:
 
 <https://data-4-climate-action-edinburgh.github.io/home/>
+
+Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: - supported ECCAN to process member data, and to select software for this purpose; - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report.
+
+As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust).
 
 # In a nutshell
 
@@ -84,22 +89,33 @@ Increasing rainfall will increase the risk of surface water flooding and river f
 
 Rising sea levels will increase the risk of coastal flooding.
 
+Further details on how to use SEPA Flood Maps can be found in the [Methods section Methods.html](https://github.com/search?q=repo%3Adata4climateactionedinburgh%2Fabcd_2025%20Methods.html&type=code).
+
 # Travel
 
-Active travel such as cycling helps reduce greenhouse gas emissions. 
+Active travel such as cycling helps reduce greenhouse gas emissions.
 
-The scatter plot below shows higher counts in 2024, compared to 2022 and 2023, suggesting there was an increase in the level of cycling in the city. 
+The scatter plot below shows higher counts in 2024, compared to 2022 and 2023, suggesting there was an increase in the level of cycling in the city.
 
-Cycle counter data provides us with a sample of the bicycle journeys taken. There are a large number of cycle counters across the city, provided by City of Edinburgh Council. The data is available under an open licence from [Cycling Open Data's usmart site](https://usmart.io/org/cyclingscotland/). 
+Cycle counter data provides us with a sample of the bicycle journeys taken. There are a large number of cycle counters across the city, provided by City of Edinburgh Council. The data is available under an open licence from [Cycling Open Data's usmart site](https://usmart.io/org/cyclingscotland/).
 
-The chart of the total from all sixty counters in Edinburgh shows the number of bicycles recorded fluctuates with the seasons, peaking each summer and dropping in the winter. The locations are listed on our GitHub repo: 
-<https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/open_data/travel/README_COD.md>
+The chart of the total from all sixty counters in Edinburgh shows the number of bicycles recorded fluctuates with the seasons, peaking each summer and dropping in the winter. The locations are listed on our GitHub repo: <https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/open_data/travel/README_COD.md>
 
-This data visualisation was coded in R (by Pauline) using the ggplot package - the code is available on our GitHub repo, along with a copy of the downloaded data: <https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/code/active_travel.R>  
+This data visualisation was coded in R (by Pauline) using the ggplot package - the code is available on our GitHub repo, along with a copy of the downloaded data: <https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/code/active_travel.R>
 
-![Cycling counter data, peaking in summer and falling in winter](images/Daily_total_cycling_2016_to_2024.png){fig-alt="Scatter plot showing cycling total for all counters in Edinburgh."}
+![Cycling counter data, peaking in summer and falling in winter. The R code that produced this chart can be found at <https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/code/active_travel.R>](images/Daily_total_cycling_2016_to_2024.png){fig-alt="Scatter plot showing cycling total for all counters in Edinburgh."}
 
 # Climate action
+
+## ECCAN
+
+ECCAN is the Edinburgh Communities Climate Action Network. They are gathering data on the work of their member charities and other voluntary organisations. We will add that info as soon as it becomes available.
+
+## City of Edinburgh Council
+
+The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 climate duties report provides the following statement on the approach and governance in place with respect to climate change:
+
+"The City of Edinburgh Council declared a climate emergency in February 2019, set a new target for the city to be net zero by 2030 and declared a nature emergency in 2023. To achieve this net zero target and adapt the city to the impacts of climate change, a 2030 Climate Strategy and Implementation Plan was approved in November 2021. The Strategy contains Council and citywide governance and reporting structures and strategic actions to achieve the 2030 net zero target and adapt the city. A Council Emissions Reduction Plan (CERP) (approved November 2021) outlines a phased action plan for reducing Council corporate emissions emissions. A CERP Board, established in 2022, provides strategic leadership and operational accountability for delivery of the Council’s organisational emissions target of net zero by 2030. It is chaired by the Service Director for Sustainable Development and includes Council’s key service areas for each of the strands of the plan (Buildings, Fleet, Waste, Human Resources and Procurement)."
 
 # References
 
@@ -134,5 +150,4 @@ Climate Stripes, University of Reading, Ed Hawkins <https://www.reading.ac.uk/pl
 
 <https://showyourstripes.info/s/europe/unitedkingdom/scotland>
 
-Cycling Open Data, Cycling Scotland
-<https://usmart.io/org/cyclingscotland/>
+Cycling Open Data, Cycling Scotland <https://usmart.io/org/cyclingscotland/>
