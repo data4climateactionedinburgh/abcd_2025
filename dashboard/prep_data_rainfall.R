@@ -16,13 +16,12 @@ rain_filenames <-
 rain_filenames <- 
   rain_filenames[!str_detect(rain_filenames, "rain_stations")]
 
+# Add a column containing rain station name, parsed out of filename
 for (onefile in rain_filenames){
   #Read in file to tibble, then add a column containing first word of name
   rain_df <- read_csv(here("open_data", "rainfall", onefile)) |>
-    mutate(rain_station = stri_match(onefile, regex = "^.[1..20]_"))
+    mutate(rain_station = as.character(stri_match(onefile, regex = "^.*?_", mode = 'last')))
   rain_all_stations_data <- rbind(rain_all_stations_data, rain_df)
 }
 
-#rain_data_struc <- map(rain_filenames, read_csv)
 
-map()
