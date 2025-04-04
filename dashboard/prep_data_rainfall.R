@@ -4,7 +4,7 @@
 
 library(tidyverse)
 library(here)
-
+library(stringi)
 
 rain_all_stations_data <- tibble()
 
@@ -16,11 +16,11 @@ rain_filenames <-
 rain_filenames <- 
   rain_filenames[!str_detect(rain_filenames, "rain_stations")]
 
-for onefile in rain_filenames{
+for (onefile in rain_filenames){
   #Read in file to tibble, then add a column containing first word of name
   rain_df <- read_csv(onefile) |>
-    mutate(rain_station = str_detect(onefile, "^.[1..20]\b"))
-  rain_all_stations_data <- rbind(rain_data_struc, rain_df)
+    mutate(rain_station = stri_match(onefile, "^.[1..20]\b"))
+  rain_all_stations_data <- rbind(rain_all_stations_data, rain_df)
 }
 
 #rain_data_struc <- map(rain_filenames, read_csv)
