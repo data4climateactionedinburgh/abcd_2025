@@ -22,9 +22,12 @@ for (onefile in rain_filenames){
   #Read in file to tibble, then add a column containing first word of name
   rain_df <- read_csv(here("open_data", "rainfall", onefile)) |>
     mutate(rain_station = as.character(stri_match(onefile, regex = "^.*?_", mode = 'last'))) |>
-    mutate(rain_station = stri_replace(rain_station, fixed = "_", replacement = ""))
+    mutate(rain_station = stri_replace(rain_station, fixed = "_", replacement = ""))|>
+    rename(rainfall_in_mm = "Value")
   
   rain_all_stations_data <- rbind(rain_all_stations_data, rain_df)
 }
 
-write.csv(rain_all_stations_data, here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"))
+# Save into a file for shiny to pick up. 
+# Set row.names to not add unnamed column just containing row numbers.
+write.csv(rain_all_stations_data, here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"), row.names = FALSE)
