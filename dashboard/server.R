@@ -16,7 +16,6 @@ function(input, output) {
   
   dataset <- reactive({
     aggreg_rain_df
-    #diamonds[sample(nrow(diamonds), input$sampleSize),]
   })
   
   output$plot <- renderPlot({
