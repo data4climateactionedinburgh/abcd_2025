@@ -21,10 +21,10 @@ function(input, output) {
   
   output$plot <- renderPlot({
     
-    p <- ggplot(dataset(), aes_string(x=input$x, y=input$y)) + geom_point()
+    p <- ggplot(dataset(), aes_string(x=input$timestamp, y=input$rainfall_in_mm)) + geom_point()
     
-    if (input$color != 'None')
-      p <- p + aes_string(color=input$color)
+    if (input$rain_station != 'None')
+      p <- p + aes_string(Individual_station=input$rain_station)
     
     facets <- paste(input$facet_row, '~', input$facet_col)
     if (facets != '. ~ .')
