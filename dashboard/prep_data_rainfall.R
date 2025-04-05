@@ -36,13 +36,15 @@ for (onefile in rain_filenames){
   all_rain_stations_data <- rbind(all_rain_stations_data, rain_df)
 }
 
+#NOT WORKING, NEEDS TROUBLESHOOTING
 # Add mean values for all Edinburgh stations, for a given timestamp
-# as a new row, so user can select mean from same input widget as indificual stations
-all_rain_stations_data |>
+# as a new row, so user can select mean from same input widget as individual stations
+Averages_for_Edinburgh <- all_rain_stations_data |>
   group_by("Timestamp") |>
-  group_modify(~ .x |>
-                 add_row(rain_station = "Edinburgh_avg", rainfall_in_mm = mean(.x$rainfall_in_mm))) |>
-  ungroup()
+  summarise(rainfall_in_mm = mean(rainfall_in_mm))
+
+all_rain_stations_data <- rbind(all_rain_stations_data, Averages_for_Edinburgh)
+
  
 # Save into a file for shiny to pick up. 
 # Set row.names to not add unnamed column just containing row numbers.
