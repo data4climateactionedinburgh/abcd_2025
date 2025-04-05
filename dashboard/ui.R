@@ -1,20 +1,22 @@
 library(shiny)
 library(ggplot2)
 
-dataset <- diamonds
+#dataset <- diamonds
+
+dataset <- read_csv(here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"))
 
 fluidPage(
   
-  titlePanel("Edinburgh Rainfall by D4CAE previously Diamonds"),
+  titlePanel("Edinburgh Rainfall by D4CAE"),
   
   sidebarPanel(
     
-    sliderInput('sampleSize', 'Sample Size', min=1, max=nrow(dataset),
-                value=min(1000, nrow(dataset)), step=500, round=0),
+    sliderInput('timestamp', "the time/date hopefully", min=1, max=nrow(dataset),
+                value=nrow(dataset), step=10, round=0),
     
-    selectInput('x', 'X', names(dataset)),
+    selectInput('value', 'mm rainfall', names(dataset)),
     selectInput('y', 'Y', names(dataset), names(dataset)[[2]]),
-    selectInput('color', 'Color', c('None', names(dataset))),
+    selectInput('rain_station', 'Rain station name', c('None', names(dataset))),
     
     checkboxInput('jitter', 'Jitter'),
     checkboxInput('smooth', 'Smooth'),
