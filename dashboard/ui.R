@@ -1,9 +1,10 @@
 library(shiny)
 library(ggplot2)
-
+library(readr)
+library(here)
 
 dataset <- read_csv(here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"))
-num_of_dates <- nrow(unique(dataset[["Timestamp"]]))
+num_of_dates <- nrow(unique(test_dataset['Timestamp']))
 
 fluidPage(
   
