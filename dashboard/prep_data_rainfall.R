@@ -6,7 +6,10 @@ library(tidyverse)
 library(here)
 library(stringi)
 
-rain_all_stations_data <- tibble()
+# run the data prep for daily, monthly or both
+periodicity <- "monthly"
+
+all_rain_stations_data <- tibble()
 
 # Read in the filenames of rain data
 rain_filenames <- 
@@ -25,8 +28,13 @@ for (onefile in rain_filenames){
     mutate(rain_station = stri_replace(rain_station, fixed = "_", replacement = ""))|>
     rename(rainfall_in_mm = "Value")
   
-  rain_all_stations_data <- rbind(rain_all_stations_data, rain_df)
+  all_rain_stations_data <- rbind(all_rain_stations_data, rain_df)
 }
+
+# Add mean values for all Edinburgh stations, for a given timestamp
+all_rain_stations_data |>
+  group_by("Timestamp") |>
+  summarise(Edinburgh_mean = avg(rainfall_in_mm))
 
 # Save into a file for shiny to pick up. 
 # Set row.names to not add unnamed column just containing row numbers.
