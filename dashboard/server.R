@@ -20,12 +20,12 @@ function(input, output) {
   
   output$plot <- renderPlot({
     
-    p <- ggplot(dataset(), aes_string(x=input$timestamp, y=input$rainfall_in_mm)) + geom_point()
+    p <- ggplot(dataset(), aes_string(x=input$timestamp_slider, y=input$rainfall_station_dropdown)) + geom_point()
     
-    if (input$rain_station != 'None')
-      p <- p + aes_string(Individual_station=input$rain_station)
+    if (input$facet_row != 'None')
+      p <- p + aes_string(Individual_station=input$facet_row)
     
-    facets <- paste(input$facet_row, '~', input$facet_col)
+    facets <- paste(input$facet_col, '~', input$facet_col)
     if (facets != '. ~ .')
       p <- p + facet_grid(facets)
     
