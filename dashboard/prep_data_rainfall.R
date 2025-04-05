@@ -14,14 +14,17 @@ rain_filenames <-
 
 # Exclude the lookup file containing the stations' names
 rain_filenames <- 
-  rain_filenames[!str_detect(rain_filenames, "rain_stations")]
+  rain_filenames[!str_detect(rain_filenames, "rain_stations|aggreg")] 
+  
 
 # Add a column containing rain station name, parsed out of filename
 for (onefile in rain_filenames){
   #Read in file to tibble, then add a column containing first word of name
   rain_df <- read_csv(here("open_data", "rainfall", onefile)) |>
-    mutate(rain_station = as.character(stri_match(onefile, regex = "^.*?_", mode = 'last')))
+    mutate(rain_station = as.character(stri_match(onefile, regex = "^.*?_", mode = 'last'))) |>
+    mutate(rain_station = stri_replace(rain_station, fixed = "_", replacement = ""))
+  
   rain_all_stations_data <- rbind(rain_all_stations_data, rain_df)
 }
 
-
+write.csv(rain_all_stations_data, here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"))
