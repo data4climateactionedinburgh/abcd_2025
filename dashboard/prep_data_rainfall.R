@@ -12,10 +12,10 @@ periodicity <- "monthly"
 all_rain_stations_data <- tibble()
 
 # Read in the filenames of rain data
-if (stri_detect(periodicity, "monthly")){
+if (stri_cmp_eq(periodicity, "monthly")){
   rain_filenames <- 
     list.files(path = here("open_data", "rainfall"), pattern = '.*monthly.*csv')
-} else if (stri_detect(periodicity, "daily")){
+} else if (stri_cmp_eq(periodicity, "daily")){
   list.files(path = here("open_data", "rainfall"), pattern = '.*daily*csv')
   
 }
@@ -33,7 +33,7 @@ for (onefile in rain_filenames){
     mutate(rain_station = stri_replace(rain_station, fixed = "_", replacement = ""))|>
     rename(rainfall_in_mm = "Value")
   
-  all_rain_stations_data <- rbind(rain_all_stations_data, rain_df)
+  all_rain_stations_data <- rbind(all_rain_stations_data, rain_df)
 }
 
 # Add mean values for all Edinburgh stations, for a given timestamp
@@ -46,4 +46,4 @@ all_rain_stations_data |>
  
 # Save into a file for shiny to pick up. 
 # Set row.names to not add unnamed column just containing row numbers.
-write.csv(rain_all_stations_data, here("open_data", "rainfall", stri_c(periodicity, "_aggreg_edinburgh_rainfall.csv")), row.names = FALSE)
+write.csv(all_rain_stations_data, here("open_data", "rainfall", stri_c(periodicity, "_aggreg_edinburgh_rainfall.csv")), row.names = FALSE)
