@@ -12,8 +12,13 @@ periodicity <- "monthly"
 all_rain_stations_data <- tibble()
 
 # Read in the filenames of rain data
-rain_filenames <- 
-  list.files(path = here("open_data", "rainfall"), pattern = '.csv')
+if (stri_detect(periodicity, "monthly")){
+  rain_filenames <- 
+    list.files(path = here("open_data", "rainfall"), pattern = '.*monthly.*csv')
+} else if (stri_detect(periodicity, "daily")){
+  list.files(path = here("open_data", "rainfall"), pattern = '.*daily*csv')
+  
+}
 
 # Exclude the lookup file containing the stations' names
 rain_filenames <- 
@@ -41,4 +46,4 @@ all_rain_stations_data |>
  
 # Save into a file for shiny to pick up. 
 # Set row.names to not add unnamed column just containing row numbers.
-write.csv(rain_all_stations_data, here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"), row.names = FALSE)
+write.csv(rain_all_stations_data, here("open_data", "rainfall", stri_c(periodicity, "_aggreg_edinburgh_rainfall.csv")), row.names = FALSE)
