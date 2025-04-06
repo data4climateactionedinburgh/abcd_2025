@@ -16,7 +16,8 @@ if (stri_cmp_eq(periodicity, "monthly")){
   rain_filenames <- 
     list.files(path = here("open_data", "rainfall"), pattern = '.*monthly.*csv')
 } else if (stri_cmp_eq(periodicity, "daily")){
-  list.files(path = here("open_data", "rainfall"), pattern = '.*daily*csv')
+  rain_filenames <- 
+    list.files(path = here("open_data", "rainfall"), pattern = '.*daily.*csv')
   
 }
 
