@@ -17,8 +17,10 @@ wee_flowers |> rowwise() # at the console, makes little visible difference
 wee_flowers |> ungroup()  # at the console, makes little visible difference
 
 other_precipitation <- tibble(date_of_measurement <- c("Monday1", "Tuesday2",
+                                                       "Monday1", "Monday1",
+                                                       "Tuesday2", "Tuesday2",
                                                        "Weds3rd", "Thurs", "Mon 8th"),
-                              rain_mm <- c(5.7, 4.9, 2.8, 1.1, 0.3))
+                              rain_mm <- c(5.7, 4.9, 2.8, 1.9, 1.8, 1.7, 1.6, 1.1, 0.3))
 
 # Geeks for geeks https://www.geeksforgeeks.org/row-wise-operation-in-r-using-dplyr/?ref=header_outind
 # Using summarise method
@@ -27,5 +29,10 @@ other_precipitation <- tibble(date_of_measurement <- c("Monday1", "Tuesday2",
 # method and the output data contains one row for each of the groups present 
 # in the column for which the group_by method is invoked. 
 # Good explanation of Across!
-# Actually found code I need in 
+# Actually may have found code I probably need (?! not working) in 
 # https://stackoverflow.com/questions/72044720/r-insert-row-with-mean-after-group-of-values 
+# not working
+precipttn_wt_means <- other_precipitation |>
+  group_by(date_of_measurement) |>
+  mutate(mean_rain = mean(rain_mm)) |>
+  ungroup()
