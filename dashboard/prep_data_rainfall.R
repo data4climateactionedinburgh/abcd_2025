@@ -28,24 +28,25 @@ rain_filenames <-
 
 # Add a column containing rain station name, parsed out of filename
 for (onefile in rain_filenames){
-  #Read in file to tibble, then add a column containing first word of name
+  #Read in file to tibble, then add station column containing first word of name
+  # then rename Value to more meaningful name
+  # then rename Timestamp to avoid clash with core R term
   rain_df <- read_csv(here("open_data", "rainfall", onefile)) |>
     mutate(rain_station = as.character(stri_match(onefile, regex = "^.*?_", mode = 'last'))) |>
     mutate(rain_station = stri_replace(rain_station, fixed = "_", replacement = ""))|>
-    rename(rainfall_in_mm = "Value")
+    rename(rainfall_in_mm = "Value")|>
+    rename(measurement_date = "Timestamp")
   
   all_rain_stations_data <- rbind(all_rain_stations_data, rain_df)
 }
 
-#NOT WORKING, NEEDS TROUBLESHOOTING
+# NOT WORKING
 # Add mean values for all Edinburgh stations, for a given timestamp
 # as a new row, so user can select mean from same input widget as individual stations
-Averages_for_Edinburgh <- all_rain_stations_data |>
-  group_by("Timestamp") |>
-  summarise(rainfall_in_mm = mean(rainfall_in_mm))
-
-all_rain_stations_data <- rbind(all_rain_stations_data, Averages_for_Edinburgh)
-
+all_rain_stations_data <- all_rain_stations_data |>
+  group_by(measurement_date) |>
+  mutate(Edinburgh_avg = summarise(mean(rainfall_in_mm)))|>
+  ungroup()
  
 # Save into a file for shiny to pick up. 
 # Set row.names to not add unnamed column just containing row numbers.

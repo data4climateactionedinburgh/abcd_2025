@@ -3,9 +3,14 @@
 # to try out rowwise data manipulation
 # so I can use it for the rainfall dashboard. 
 
+library(stringi)
+library(tidyverse)
+
 wee_flowers <- head(iris, 5)
 
-wee_flowers <- rbind(wee_flowers, head(iris|>filter(Species=="virginica"), 7))
+other_wee_flowers <- head( iris |> filter(stri_cmp_eq({Species}, "virginica")), 7)
+
+wee_flowers <- rbind(wee_flowers, other_wee_flowers)
 
 wee_flowers |> rowwise() # at the console, makes little visible difference
 

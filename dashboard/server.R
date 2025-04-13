@@ -15,7 +15,7 @@ function(input, output) {
   aggreg_rain_df <- read_csv(here("open_data", "rainfall", "aggreg_edinburgh_rainfall.csv"))
   
   dataset <- reactive({
-    aggreg_rain_df
+    dat <- aggreg_rain_df
   })
   
   output$plot <- renderPlot({
