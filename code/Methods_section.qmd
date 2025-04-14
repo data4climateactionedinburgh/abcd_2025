@@ -1,4 +1,14 @@
-# Methods
+---
+title: "Methods - ABCD Report 2025"
+author: "D4CAE - Data 4 Climate Action Edinburgh"
+format: pdf
+editor: visual
+toc: true
+toc-depth: 1
+---
+
+
+# Methods Section
 
 As a citizen science group, this Methods document is written for a citizen scientist audience, to share learning about working with climate data.
 
