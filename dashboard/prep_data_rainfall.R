@@ -44,10 +44,18 @@ for (onefile in rain_filenames){
 # Add mean values for all Edinburgh stations, for a given timestamp
 # as a new row, so user can select mean from same input widget as individual stations
 all_rain_stations_data <- all_rain_stations_data |>
-  group_by(measurement_date) |>
-  mutate(Edinburgh_avg = summarise(mean(rainfall_in_mm)))|>
-  ungroup()
- 
+  # group_by(measurement_date) |>
+  # mutate(Edinburgh_avg = summarise(mean(rainfall_in_mm)))|>
+  # ungroup()
+# Instead, try adapting the approach taken for cycling data
+#   # Plot
+#   cycling_plot_data <- daily_cycling |>
+#   select(endTime, cycles_count)|>
+#   mutate(CountDate = as.Date(endTime)) |>
+#   group_by(CountDate) |>
+#   summarise(daily_total = sum(cycles_count)) 
+# 
+# plot(cycling_plot_data)
 # Save into a file for shiny to pick up. 
 # Set row.names to not add unnamed column just containing row numbers.
 write.csv(all_rain_stations_data, here("open_data", "rainfall", stri_c(periodicity, "_aggreg_edinburgh_rainfall.csv")), row.names = FALSE)
