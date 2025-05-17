@@ -105,6 +105,11 @@ This data visualisation was coded in R (by Pauline) using the ggplot package - t
 
 ![Cycling counter data, peaking in summer and falling in winter. The R code that produced this chart can be found at <https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/code/active_travel.R>](images/Daily_total_cycling_2016_to_2024.png){fig-alt="Scatter plot showing cycling total for all counters in Edinburgh."}
 
+Data from Spokes confirms the upward trend: 
+"The biannual Spokes city-centre and Porty traffic counts, on Tuesday 11 November found bikes up almost everywhere compared to November 2023 – though mostly not by large amounts. In the city centre morning rush hour bikes were up 4% from 365 to 381, and at lunchtime up 17% from 156 to 183. In Porty, totalling morning and lunchtime, bike numbers were up a huge 36%, albeit from the low base of 70, to 95. Whilst it is great to see numbers rising at our traditional city centre on-road count locations,* it is notable that Cycling Scotland’s automatic counters have found much greater increases in bike numbers at locations where new bike infrastructure is in place" 
+
+[Nov Traffic Count: bikes up, but more if new infra](http://www.spokes.org.uk/2024/11/nov-traffic-count-bikes-up-but-more-if-new-infra/)
+
 # Climate action
 
 ## ECCAN
