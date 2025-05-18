@@ -28,13 +28,17 @@ Analysis - use CRAN packages - netcdf is a binary file format of course.
 https://cran.r-project.org/web/packages/ncdf4/index.html
 https://cran.r-project.org/web/packages/ncdf4.helpers/index.html 
 
+"DATA LOCATION, FORMATAND ACCESSIBILIT YVersion 1.0.0.0 of the HadUK‐Grid dataset is available forusers to download from the CEDA Archive (Met Office,2018). The grids are packaged as CF‐compliant (cfconventions.org) netCDF files (Unidata, 2019). The primary datasetis a 1 × 1 km grid on the British National Grid projection(EPSG:27700) "
+Hollis et al 2019
+
 ## Approach
 
 https://ropensci.org/blog/2019/11/05/tidync/
 
 ## References ## 
 Hollis, D, McCarthy, M, Kendon, M, Legg, T and Simpson, I (2019), HadUK-Grid - 
-A new UK dataset of gridded climate observations, Geosci. Data J., 6(2), 151-159.
+A new UK dataset of gridded climate observations, Geosci. Data J., 6(2), 151-159. 
+<https://doi.org/10.1002/gdj3.78>
 
 Provisional monthly 2024 data: 
 https://www.metoffice.gov.uk/hadobs/hadukgrid/

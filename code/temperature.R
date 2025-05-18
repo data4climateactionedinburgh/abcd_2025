@@ -1,6 +1,4 @@
-# Temperatures in Edinburgh and Scotland. 
-
-# Read in the twelve files for each month's data from HadUK grid. 
+# Temperatures in Edinburgh 2024 
 
 library(ncdf4)
 #library(ncdf4.helpers)
@@ -9,7 +7,7 @@ library(here)
 library(tidyverse)
 library(stringi)
 
-# Plot a chart of the daily temperature in Edinburgh in 2023 and 2024.
+# Plot a chart of the daily temperature max and min, and monthly avg, in Edinburgh in 2024.
 
 # Data from Met Office's HadUK Grid, released by Met Office under the OGL 
 # - see README.md for further details. 
@@ -27,7 +25,7 @@ single_location_latlong <- c(55.91174,-3.27710)
 # Whereas, there are lat and longitude fields in both annual and month files. 
 # Time units: hours since 1800-01-01 00:00:00
 
-temperature_to_plot <- tibble()
+temperature_to_plot <- list()
 
 # function to return tibble of daily tas values with dates
 get_tas_from_file <- function(filename, single_location_latlong){
