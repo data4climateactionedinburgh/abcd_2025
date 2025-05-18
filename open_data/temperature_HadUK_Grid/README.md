@@ -14,6 +14,11 @@ the final two digits of the filename giving the number of the month, eg March
 
 tas_hadukgrid_uk_1km_mon_202403.nc 
 
+This is separate from the daily average data, contained in the daily files, 
+which have tasmax or tasmin, there's no tas file eg
+tasmax_hadukgrid_uk_1km_day_20240301-20240331.nc
+tasmin_hadukgrid_uk_1km_day_20240301-20240331.nc
+
 The 2023 annual data file for tas the mean temperature was downloaded from the
 CEDA archive. CEDA released the data under an OGL. 
 

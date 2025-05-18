@@ -45,7 +45,7 @@ get_tas_from_file <- function(filename, single_location_latlong){
 
 # 2023 Annual data
 
-# Import the 2023 annual data file ie not provisional
+# Import the 2023 annual data file ie not provisional, and one figure the avg for the whole year.
 # tas_hadukgrid_uk_1km_ann_202301-202312.nc
 filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
 #nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
@@ -55,6 +55,7 @@ temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_
 
 
 # 2024 monthly provisional data 
+# One figure the monthly avg
 
 # use dir() to get filenames, similar to glob
 files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
