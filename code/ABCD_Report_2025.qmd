@@ -1,8 +1,9 @@
 ---
 title: "ABCD Report 2025"
 author: "D4CAE - Data 4 Climate Action Edinburgh"
-format: pdf
- mainfont: "Open Sans"
+format: 
+ pdf:
+  mainfont: "DejaVu Sans"
 editor: visual
 toc: true
 toc-depth: 2
