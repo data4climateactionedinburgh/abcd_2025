@@ -27,29 +27,48 @@ single_location_latlong <- c(55.91174,-3.27710)
 
 temperature_to_plot <- list()
 
-# function to return tibble of tas (ie daily mean of min + max) values with dates
-get_tas_from_file <- function(filename, single_location_latlong){
-  nc_conn <- open.nc(here(data_dir_name, data_subdir, filename))
-  # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
-  # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
-  # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
-  # print.nc(nc_conn)
-  tas_from_file <- tibble()
-  #tas_from_file$tas  <-  ncvar_get(nc_conn, varid = "tas")
-  #tas_from_file$time  <- ncvar_get(nc_conn, varid = "time")
-  
-  return(tas_from_file)
-}
+# Not working
+# function to return tibble of tas (ie daily mean of min + max) values 
+# get_tas_from_file <- function(filename, single_location_latlong){
+#   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename))
+#   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
+#   # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
+#   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
+#   # print.nc(nc_conn)
+#   tas_from_file <- tibble()
+#   tas_from_file$tas  <-  ncvar_get(nc_conn, varid = "tas")
+#   tas_from_file$time  <- ncvar_get(nc_conn, varid = "time")
+#   
+#   return(tas_from_file)
+# }
 
 # 2023 Annual data
 
 # Import the 2023 annual data file ie not provisional, and one figure the avg for the whole year.
 # tas_hadukgrid_uk_1km_ann_202301-202312.nc
 filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
-#nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
+nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
 
-temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_latlong)
 
+
+# 2024 monthly daily provisional data 
+
+# use dir() to get filenames, similar to glob
+files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
+data_files_daily_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmax_hadukgrid_uk_1km_day") 
+
+# read in max data
+for (i in 1:length(data_files_daily_temprtr)){ 
+  nc_conn <- nc_open(here(data_dir_name, data_subdir, data_files_daily_temprtr[i]))
+  the_tasmax_data <- ncvar_get(nc_conn, "tasmax")
+#  daily_temperature_to_plot <- 
+ #   rbind(daily_temperature_to_plot, get_tas_from_file(data_files_months_temprtr[i], single_location_latlong)) 
+}
+
+# SAve out the max temp to csv
+temperature_data_csv_filename <- "my_csv_monthly_temperature.csv"
+write_csv(temperature_to_plot, temperature_data_csv_filename)
+plot(temperature_to_plot)
 
 
 # 2024 monthly provisional data 
@@ -59,15 +78,19 @@ temperature_to_plot <- get_tas_from_file(filenm_temprtr_annual, single_location_
 files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
 data_files_months_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tas_hadukgrid_uk_1km_mon") 
 
-
-for (i in 1:length(data_files_months_temprtr)){ #should be 12(!)
+# read in monthly data
+for (mth in 1:length(data_files_months_temprtr)){ #should be 12(!)
   temperature_to_plot <- 
-    rbind(temperature_to_plot, get_tas_from_file(data_files_months_temprtr[i], single_location_latlong)) 
+    rbind(temperature_to_plot, get_tas_from_file(data_files_months_temprtr[mth], single_location_latlong)) 
 }
 
-temperature_data_csv_filename <- "my_csv_temperature.csv"
-write.csv2(temperature_to_plot, temperature_data_csv_filename)
+# SAve out the temp to csv
+temperature_data_csv_filename <- "my_csv_monthly_temperature.csv"
+write_csv(temperature_to_plot, temperature_data_csv_filename)
 plot(temperature_to_plot)
+
+
+
 
 # Explore the spatial grid in a netcdf file
 # with aim of checking it is consistent with expectations
@@ -76,14 +99,15 @@ plot(temperature_to_plot)
 explore_spatial_nc <- function(inputfile) {
   places_file <- "ABCD_places.csv"
   places <- read_csv(here(data_dir_name, places_file))
+  
   nc_conn <- open.nc(here(data_dir_name, data_subdir, inputfile))
   print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
   # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
   # print.nc(nc_conn)
-  lat_from_file$tas  <-  ncvar_get(nc_conn, varid = "lat")
+  lat_from_file  <-  ncvar_get(nc_conn, varid = "lat")
   
-  long_from_file$tas  <-  ncvar_get(nc_conn, varid = "long")
+  long_from_file  <-  ncvar_get(nc_conn, varid = "long")
   
   
   
