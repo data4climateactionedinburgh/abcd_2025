@@ -1,5 +1,9 @@
-place_name,os_grid_ref_1km,latitude,longitude,GSS_code
-"Edinburgh grid square",NT
-"Edinburgh 1km sq 1",
-"CEC",,,,S12000036
-"ECCAN office","NT 25981 74498",55.91174,-3.27710
+place_name,os_grid_ref_1km,latitude,longitude,GSS_code,Easting_ref_SEPA,Northing_ref_SEPA,postcode
+Edinburgh grid square,NT,,,,,,
+Edinburgh 1km sq 1,,,,,,,
+CEC,,,,S12000036,,,
+ECCAN office,NT 25958 74514,55.91174,-3.27710,,325958,674514,EH1 3LH
+Lerwick,"	HU 47658 41571",60.15510,-1.14338,,447658,1141571,ZE1 0LL
+Fraserburgh,NJ 99909 67089,,,,399909,867089,
+Eastbourne,TV 60959 99138,,,,560959,99138,
+Truro,SW 81681 44969,50.26393,-5.06413,,181681,44969,TR1 3HH

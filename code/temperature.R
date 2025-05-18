@@ -27,7 +27,7 @@ single_location_latlong <- c(55.91174,-3.27710)
 
 temperature_to_plot <- list()
 
-# function to return tibble of daily tas values with dates
+# function to return tibble of tas (ie daily mean of min + max) values with dates
 get_tas_from_file <- function(filename, single_location_latlong){
   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename))
   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
@@ -69,7 +69,18 @@ temperature_data_csv_filename <- "my_csv_temperature.csv"
 write.csv2(temperature_to_plot, temperature_data_csv_filename)
 plot(temperature_to_plot)
 
-
+# Explore the spatial grid in a netcdf file
+# with aim of checking it is consistent with expectations
+# ie should be British National Grid
+# Should be able to identify Edinburgh
+explore_spatial_nc <- function(inputfile) {
+  places_file <- "ABCD_places.csv"
+  places <- read_csv()
+  
+  
+  
+}
+# explore_spatial_nc("tasmin_hadukgrid_uk_1km_day_20241201-20241231.nc")
 
 # Appendix: Metadata - output from print.nc on annual data file
 # # > print.nc(nc_conn)
