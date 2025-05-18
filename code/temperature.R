@@ -18,7 +18,7 @@ data_subdir <- "temperature_HadUK_Grid"
 # Identify OS grid refs for Edinburgh - grid square NT
 # one 1km grid in central Edinburgh, inc the ECCAN office on Forth St
 single_location_gridref <- "NT 25981 74498"
-# Cannot find variable for gridref, so use lat and longitude, 14 Forth St
+# Cannot find variable for gridref in the data, so use lat and longitude, 14 Forth St
 single_location_latlong <- c(55.91174,-3.27710)
 
 # Cannot find a gridreference variable to use to filter / slice data. 
@@ -75,7 +75,16 @@ plot(temperature_to_plot)
 # Should be able to identify Edinburgh
 explore_spatial_nc <- function(inputfile) {
   places_file <- "ABCD_places.csv"
-  places <- read_csv()
+  places <- read_csv(here(data_dir_name, places_file))
+  nc_conn <- open.nc(here(data_dir_name, data_subdir, inputfile))
+  print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
+  # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
+  # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
+  # print.nc(nc_conn)
+  lat_from_file$tas  <-  ncvar_get(nc_conn, varid = "lat")
+  
+  long_from_file$tas  <-  ncvar_get(nc_conn, varid = "long")
+  
   
   
   
