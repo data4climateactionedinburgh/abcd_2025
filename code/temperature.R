@@ -25,13 +25,16 @@ single_location_latlong <- c(55.91174,-3.27710)
 # Whereas, there are lat and longitude fields in both annual and month files. 
 # Time units: hours since 1800-01-01 00:00:00
 
-temperature_to_plot <- list()
+# temperature_to_plot <- list()
 
 # function to return tibble of values
 get_data_from_file <- function(filename, single_location_latlong, variable_name){
-  # for testing
-  
+  # Might not use location - simpler approach, save data to a CSV first,
+  # for manipulation in Excel. 
+  # for testing, name of December min temp file
+  # filename <- "tasmin_hadukgrid_uk_1km_day_20241201-20241231.nc"
   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
+  # Make an inquiry with RNetCDF function
   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
   # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
@@ -122,12 +125,31 @@ explore_spatial_nc <- function(inputfile) {
 }
 # explore_spatial_nc("tasmin_hadukgrid_uk_1km_day_20241201-20241231.nc")
 
-# Appendix: Metadata - output from print.nc on annual data file
+# Appendix: Metadata - output from print.nc 
+
+# Output from print.nc on daily file
+# NC_CHAR tasmin:grid_mapping = "transverse_mercator" ;
+# NC_CHAR tasmin:coordinates = "latitude longitude" ;
+# NC_INT transverse_mercator ;
+# NC_CHAR transverse_mercator:grid_mapping_name = "transverse_mercator" ;
+# NC_DOUBLE transverse_mercator:longitude_of_prime_meridian = 0 ;
+# NC_DOUBLE transverse_mercator:semi_major_axis = 6377563.396 ;
+# NC_DOUBLE transverse_mercator:semi_minor_axis = 6356256.909 ;
+# NC_DOUBLE transverse_mercator:longitude_of_central_meridian = -2 ;
+# NC_DOUBLE transverse_mercator:latitude_of_projection_origin = 49 ;
+# NC_DOUBLE transverse_mercator:false_easting = 4e+05 ;
+# NC_DOUBLE transverse_mercator:false_northing = -1e+05 ;
+# NC_DOUBLE transverse_mercator:scale_factor_at_central_meridian = 0.9996012717 ;
+# NC_INT64 time(time) ;
+# NC_CHAR time:axis = "T" ;
+
+
+# on annual data file
 # # > print.nc(nc_conn)
 # netcdf netcdf4 {
 #   dimensions:
-#     time = 1 ;
-#     projection_y_coordinate = 1450 ;
+#     time = 1 ;  #[Just one value, per geospatial point, the avg temperature for the whole year]
+#     projection_y_coordinate = 1450 ; #[same as daily]
 #     projection_x_coordinate = 900 ;
 #     bnds = 2 ;
 #     variables:

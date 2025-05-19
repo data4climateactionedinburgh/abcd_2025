@@ -1,0 +1,72 @@
+>   # for testing, name of December min temp file
+>   # filename <- "tasmin_hadukgrid_uk_1km_day_20241201-20241231.nc"
+>   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
+> print.nc(nc_conn)
+netcdf netcdf4 {
+dimensions:
+	time = 31 ;  #[31 days in December]
+	projection_y_coordinate = 1450 ;  # [same as annual]
+	projection_x_coordinate = 900 ;
+	bnds = 2 ;
+variables:
+	NC_DOUBLE tasmin(projection_x_coordinate, projection_y_coordinate, time) ;
+		NC_DOUBLE tasmin:_FillValue = 1e+20 ;
+		NC_INT64 tasmin:least_significant_digit = 3 ;
+		NC_CHAR tasmin:standard_name = "air_temperature" ;
+		NC_CHAR tasmin:long_name = "Minimum air temperature" ;
+		NC_CHAR tasmin:units = "degC" ;
+		NC_CHAR tasmin:description = "Minimum air temperature" ;
+		NC_STRING tasmin:label_units = "°C" ;
+		NC_CHAR tasmin:level = "1.5m" ;
+		NC_STRING tasmin:plot_label = "Minimum air temperature at 1.5m (°C)" ;
+		NC_CHAR tasmin:cell_methods = "time: minimum (comment: observing period is 0900 on day D-1 to 0900 on day D)" ;
+		NC_CHAR tasmin:grid_mapping = "transverse_mercator" ;
+		NC_CHAR tasmin:coordinates = "latitude longitude" ;
+	NC_INT transverse_mercator ;
+		NC_CHAR transverse_mercator:grid_mapping_name = "transverse_mercator" ;
+		NC_DOUBLE transverse_mercator:longitude_of_prime_meridian = 0 ;
+		NC_DOUBLE transverse_mercator:semi_major_axis = 6377563.396 ;
+		NC_DOUBLE transverse_mercator:semi_minor_axis = 6356256.909 ;
+		NC_DOUBLE transverse_mercator:longitude_of_central_meridian = -2 ;
+		NC_DOUBLE transverse_mercator:latitude_of_projection_origin = 49 ;
+		NC_DOUBLE transverse_mercator:false_easting = 4e+05 ;
+		NC_DOUBLE transverse_mercator:false_northing = -1e+05 ;
+		NC_DOUBLE transverse_mercator:scale_factor_at_central_meridian = 0.9996012717 ;
+	NC_INT64 time(time) ;
+		NC_CHAR time:axis = "T" ;
+		NC_CHAR time:bounds = "time_bnds" ;
+		NC_CHAR time:units = "hours since 1800-01-01 00:00:00" ;
+		NC_CHAR time:standard_name = "time" ;
+		NC_CHAR time:calendar = "standard" ;
+	NC_INT64 time_bnds(bnds, time) ;
+	NC_DOUBLE projection_y_coordinate(projection_y_coordinate) ;
+		NC_CHAR projection_y_coordinate:axis = "Y" ;
+		NC_CHAR projection_y_coordinate:bounds = "projection_y_coordinate_bnds" ;
+		NC_CHAR projection_y_coordinate:units = "m" ;
+		NC_CHAR projection_y_coordinate:standard_name = "projection_y_coordinate" ;
+	NC_DOUBLE projection_y_coordinate_bnds(bnds, projection_y_coordinate) ;
+	NC_DOUBLE projection_x_coordinate(projection_x_coordinate) ;
+		NC_CHAR projection_x_coordinate:axis = "X" ;
+		NC_CHAR projection_x_coordinate:bounds = "projection_x_coordinate_bnds" ;
+		NC_CHAR projection_x_coordinate:units = "m" ;
+		NC_CHAR projection_x_coordinate:standard_name = "projection_x_coordinate" ;
+	NC_DOUBLE projection_x_coordinate_bnds(bnds, projection_x_coordinate) ;
+	NC_DOUBLE latitude(projection_x_coordinate, projection_y_coordinate) ;
+		NC_CHAR latitude:units = "degrees_north" ;
+		NC_CHAR latitude:standard_name = "latitude" ;
+	NC_DOUBLE longitude(projection_x_coordinate, projection_y_coordinate) ;
+		NC_CHAR longitude:units = "degrees_east" ;
+		NC_CHAR longitude:standard_name = "longitude" ;
+
+// global attributes:
+		NC_CHAR :comment = "Daily resolution gridded climate observations" ;
+		NC_CHAR :creation_date = "2025-01-08T08:42:06" ;
+		NC_CHAR :frequency = "day" ;
+		NC_CHAR :institution = "Met Office" ;
+		NC_CHAR :references = "doi: 10.1002/gdj3.78" ;
+		NC_CHAR :short_name = "daily_mintemp" ;
+		NC_CHAR :source = "HadUK-Grid_Provisional" ;
+		NC_CHAR :title = "Gridded surface climate observations data for the UK" ;
+		NC_CHAR :version = "provisional" ;
+		NC_CHAR :Conventions = "CF-1.7" ;
+}
