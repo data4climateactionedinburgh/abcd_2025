@@ -40,8 +40,8 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
   # print.nc(nc_conn)
   data_from_file <- tibble()
-  data_from_file$variable_values  <-  ncvar_get(nc_conn, varid = variable_name)
-  data_from_file$time  <- ncvar_get(nc_conn, varid = "time")
+  data_from_file$variable_values  <- var.get.nc(nc_conn) # ncvar_get(nc_conn, varid = variable_name)
+  data_from_file$time  <- var.get.nc(nc_conn) # , varid = "time")
 
   rm(nc_conn)
   
