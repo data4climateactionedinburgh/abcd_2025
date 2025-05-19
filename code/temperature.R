@@ -39,14 +39,16 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
   # print.nc(nc_conn)
   data_from_file <- list()
+  # Extract data for Edinburgh, for elevation starts and ends at 1,
+  # and number of data points is the whole series starting at 1, count = 31 for 31 days
   data_from_file$variable_values <- var.get.nc(nc_conn, 
                                               variable_name, 
-                                              start = c(single_location_latlong[1], single_location_latlong[2],NA,NA), 
-                                              count = c(NA)) 
+                                              start = c(single_location_latlong[1], single_location_latlong[2],1,1), 
+                                              count = c(1,1,1,31)) 
   data_from_file$time  <- var.get.nc(nc_conn, 
                                      "time",
-                                     start = c(single_location_latlong[1], single_location_latlong[2],NA,NA),
-                                     count = c(NA)) 
+                                     start = c(single_location_latlong[1], single_location_latlong[2],1,1),
+                                     count = c(1,1,1,31)) 
 
   rm(nc_conn)
   
