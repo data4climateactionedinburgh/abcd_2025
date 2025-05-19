@@ -28,19 +28,19 @@ single_location_latlong <- c(55.91174,-3.27710)
 temperature_to_plot <- list()
 
 # Not working
-# function to return tibble of tas (ie daily mean of min + max) values 
-# get_tas_from_file <- function(filename, single_location_latlong){
-#   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename))
-#   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
-#   # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
-#   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
-#   # print.nc(nc_conn)
-#   tas_from_file <- tibble()
-#   tas_from_file$tas  <-  ncvar_get(nc_conn, varid = "tas")
-#   tas_from_file$time  <- ncvar_get(nc_conn, varid = "time")
-#   
-#   return(tas_from_file)
-# }
+function to return tibble of tas (ie daily mean of min + max) values
+get_data_from_file <- function(filename, single_location_latlong, variable_name){
+  nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
+  # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
+  # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
+  # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
+  # print.nc(nc_conn)
+  data_from_file <- tibble()
+  data_from_file$variable_values  <-  ncvar_get(nc_conn, varid = variable_name)
+  data_from_file$time  <- ncvar_get(nc_conn, varid = "time")
+
+  return(data_from_file)
+}
 
 
 # 2024 monthly daily provisional data 
