@@ -27,9 +27,10 @@ single_location_latlong <- c(55.91174,-3.27710)
 
 temperature_to_plot <- list()
 
-# Not working
-# function to return tibble of tas (ie daily mean of min + max) values
+# function to return tibble of values
 get_data_from_file <- function(filename, single_location_latlong, variable_name){
+  # for testing
+  
   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
   # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
@@ -39,6 +40,8 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   data_from_file$variable_values  <-  ncvar_get(nc_conn, varid = variable_name)
   data_from_file$time  <- ncvar_get(nc_conn, varid = "time")
 
+  rm(nc_conn)
+  
   return(data_from_file)
 }
 
@@ -50,13 +53,24 @@ files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
 data_files_daily_max_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmax_hadukgrid_uk_1km_day") 
 data_files_daily_min_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmin_hadukgrid_uk_1km_day") 
 
+# Use purrr::map() to call the function multiple times with all the parameters
+
 # read in max data
 for (i in 1:length(data_files_daily_temprtr)){ 
-  nc_conn <- nc_open(here(data_dir_name, data_subdir, data_files_daily_temprtr[i]))
-  the_tasmax_data <- ncvar_get(nc_conn, "tasmax")
-#  daily_temperature_to_plot <- 
+   the_tasmax_data <- get_data_from_file("tasmax")
+   the_tasmin_data <- get_data_from_file("tasmin")
+   #  daily_temperature_to_plot <- 
  #   rbind(daily_temperature_to_plot, get_tas_from_file(data_files_months_temprtr[i], single_location_latlong)) 
 }
+
+# read in max data
+for (i in 1:length(data_files_daily_temprtr)){ 
+  the_tasmax_data <- get_data_from_file("tasmax")
+  the_tasmin_data <- get_data_from_file("tasmin")
+  #  daily_temperature_to_plot <- 
+  #   rbind(daily_temperature_to_plot, get_tas_from_file(data_files_months_temprtr[i], single_location_latlong)) 
+}
+
 
 # SAve out the max temp to csv
 temperature_data_csv_filename <- "my_csv_temperature.csv"
