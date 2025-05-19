@@ -28,7 +28,7 @@ single_location_latlong <- c(55.91174,-3.27710)
 temperature_to_plot <- list()
 
 # Not working
-function to return tibble of tas (ie daily mean of min + max) values
+# function to return tibble of tas (ie daily mean of min + max) values
 get_data_from_file <- function(filename, single_location_latlong, variable_name){
   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
