@@ -25,23 +25,28 @@ single_location_latlong <- c(55.91174,-3.27710)
 # Whereas, there are lat and longitude fields in both annual and month files. 
 # Time units: hours since 1800-01-01 00:00:00
 
-# temperature_to_plot <- list()
-
-# function to return tibble of values
+# function to return values
 get_data_from_file <- function(filename, single_location_latlong, variable_name){
   # Might not use location - simpler approach, save data to a CSV first,
   # for manipulation in Excel. 
   # for testing, name of December min temp file
-  # filename <- "tasmin_hadukgrid_uk_1km_day_20241201-20241231.nc"
+  # filename <- "tasmax_hadukgrid_uk_1km_day_20241201-20241231.nc"
+  # variable_name <- "tasmax"
   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
   # Make an inquiry with RNetCDF function
   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
   # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
   # print.nc(nc_conn)
-  data_from_file <- tibble()
-  data_from_file$variable_values  <- var.get.nc(nc_conn) # ncvar_get(nc_conn, varid = variable_name)
-  data_from_file$time  <- var.get.nc(nc_conn) # , varid = "time")
+  data_from_file <- list()
+  data_from_file$variable_values <- var.get.nc(nc_conn, 
+                                              variable_name, 
+                                              start = c(single_location_latlong[1], single_location_latlong[2],NA,NA), 
+                                              count = c(NA)) 
+  data_from_file$time  <- var.get.nc(nc_conn, 
+                                     "time",
+                                     start = c(single_location_latlong[1], single_location_latlong[2],NA,NA),
+                                     count = c(NA)) 
 
   rm(nc_conn)
   
@@ -56,7 +61,10 @@ files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
 data_files_daily_max_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmax_hadukgrid_uk_1km_day") 
 data_files_daily_min_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmin_hadukgrid_uk_1km_day") 
 
-# Use purrr::map() to call the function multiple times with all the parameters
+# Use purrr::map() to call the function multiple times with all the parameters 
+
+all_temperature_data <- list()
+
 
 # read in max data
 for (i in 1:length(data_files_daily_temprtr)){ 
