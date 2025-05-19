@@ -44,11 +44,8 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   data_from_file$variable_values <- var.get.nc(nc_conn, 
                                               variable_name, 
                                               start = c(single_location_latlong[1], single_location_latlong[2],1,1), 
-                                              count = c(1,1,1,31)) 
-  data_from_file$time  <- var.get.nc(nc_conn, 
-                                     "time",
-                                     start = c(single_location_latlong[1], single_location_latlong[2],1,1),
-                                     count = c(1,1,1,31)) 
+                                              count = c(NA,NA,1,31)) 
+  data_from_file$time  <- var.get.nc(nc_conn, "time")
 
   rm(nc_conn)
   
