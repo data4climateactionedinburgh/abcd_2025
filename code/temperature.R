@@ -42,20 +42,13 @@ temperature_to_plot <- list()
 #   return(tas_from_file)
 # }
 
-# 2023 Annual data
-
-# Import the 2023 annual data file ie not provisional, and one figure the avg for the whole year.
-# tas_hadukgrid_uk_1km_ann_202301-202312.nc
-filenm_temprtr_annual <- "tas_hadukgrid_uk_1km_ann_202301-202312.nc"
-nc_conn <- nc_open(here(data_dir_name, data_subdir, filenm_temprtr_annual))
-
-
 
 # 2024 monthly daily provisional data 
 
 # use dir() to get filenames, similar to glob
 files_temprtr_folder <- dir(path = here(data_dir_name,data_subdir))
-data_files_daily_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmax_hadukgrid_uk_1km_day") 
+data_files_daily_max_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmax_hadukgrid_uk_1km_day") 
+data_files_daily_min_temprtr <-  stri_subset_regex(files_temprtr_folder, pattern = "tasmin_hadukgrid_uk_1km_day") 
 
 # read in max data
 for (i in 1:length(data_files_daily_temprtr)){ 
@@ -66,7 +59,7 @@ for (i in 1:length(data_files_daily_temprtr)){
 }
 
 # SAve out the max temp to csv
-temperature_data_csv_filename <- "my_csv_monthly_temperature.csv"
+temperature_data_csv_filename <- "my_csv_temperature.csv"
 write_csv(temperature_to_plot, temperature_data_csv_filename)
 plot(temperature_to_plot)
 
