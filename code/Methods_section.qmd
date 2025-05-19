@@ -37,6 +37,8 @@ From the NorData tutorial: the dimensions tell you the size and shape of the dat
 
 **Marsden, L.** (2024, May 31). NetCDF in R - from beginner to pro. Zenodo. [https://doi.org/10.5281/zenodo.11400754](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa24yZjRpd3lRakZ1Vlk3VVlyemttRHRYWlJ2UXxBQ3Jtc0tuTDZ1VHpHQ1JOdlEtR284dGx6djRYUHA3VHp4SWRlV29TNXZEZ2ZjQkdUX2ZuSTlPaFM0Slg2RHdrOW5QbFMwMGp1b3ZUcVZsMWZvRldKelBwOWRiTy1ENk9Bc2Jrd0xmcW8zOHptU3o1Y1ktcTA2aw&q=https%3A%2F%2Fdoi.org%2F10.5281%2Fzenodo.11400754&v=Xer1XBm3sns)
 
+<https://cran.r-project.org/web/packages/RNetCDF/RNetCDF.pdf>
+
 ## Flood maps
 
 We knew from the one-off survey we ran at Edinburgh Climate Festival 2023 that the public want to see flood maps showing past floods and future risk. We found ready-made maps on the SEPA website, but they are under strict intellectual property rules. Therefore, an approach was taken of generating a map, and reporting in writing on the patterns it showed, rather than sharing the map. Similarly, it is not possible to share a video tutorial on using the SEPA flood maps, as to do so might infringe copyright. So here is a simple set of steps to follow, to view flood risk:

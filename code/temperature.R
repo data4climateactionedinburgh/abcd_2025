@@ -3,11 +3,12 @@
 library(ncdf4)
 #library(ncdf4.helpers)
 library(RNetCDF)
+# https://cran.r-project.org/web/packages/RNetCDF/RNetCDF.pdf
 library(here)
 library(tidyverse)
 library(stringi)
 
-# Plot a chart of the daily temperature max and min, and monthly avg, in Edinburgh in 2024.
+# Prep data to plot a chart of the daily temperature max and min, and monthly avg, in Edinburgh in 2024.
 
 # Data from Met Office's HadUK Grid, released by Met Office under the OGL 
 # - see README.md for further details. 
@@ -32,6 +33,7 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   # for testing, name of December min temp file
   # filename <- "tasmax_hadukgrid_uk_1km_day_20241201-20241231.nc"
   # variable_name <- "tasmax"
+  
   nc_conn <- open.nc(here(data_dir_name, data_subdir, filename)) 
   # Make an inquiry with RNetCDF function
   # print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
@@ -39,13 +41,26 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
   # print.nc(nc_conn)
   data_from_file <- list()
-  # Extract data for Edinburgh, for elevation starts and ends at 1,
-  # and number of data points is the whole series starting at 1, count = 31 for 31 days
-  data_from_file$variable_values <- var.get.nc(nc_conn, 
-                                              variable_name, 
-                                              start = c(single_location_latlong[1], single_location_latlong[2],1,1), 
-                                              count = c(NA,NA,1,31)) 
+  
+  # Convert time to readable dates???
+  start_date <- as.Date("1800-01-01")
+  timestamps <- as.Date(time, origin = start_date)
+
+  # Extract the time
   data_from_file$time  <- var.get.nc(nc_conn, "time")
+  
+    
+  # Just extract all the temp data
+  
+  variable_name <- var.get.nc(data, variable_name)
+  varbl_vector <- as.vector(variable_name)
+  
+  # # Extract data for Edinburgh, for elevation starts and ends at 1,
+  # # and number of data points is the whole series starting at 1, count = 31 for 31 days
+  # data_from_file$variable_values <- var.get.nc(nc_conn, 
+  #                                             variable_name, 
+  #                                             start = c(single_location_latlong[1], single_location_latlong[2],1,1), 
+  #                                             count = c(NA,NA,1,31)) 
 
   rm(nc_conn)
   
