@@ -33,8 +33,8 @@ Hollis et al 2019
 
 ## Approach
 
-https://ropensci.org/blog/2019/11/05/tidync/
-
+https://nordatanet.github.io/NetCDF_in_R_from_beginner_to_pro/03_extracting_data_to_different_formats.html
+ 
 ## References ## 
 Hollis, D, McCarthy, M, Kendon, M, Legg, T and Simpson, I (2019), HadUK-Grid - 
 A new UK dataset of gridded climate observations, Geosci. Data J., 6(2), 151-159. 
