@@ -56,7 +56,8 @@ get_data_from_file <- function(filename, single_location_latlong, variable_name)
   varbl_vector <- as.vector(variable_name)
   
   # # Extract data for Edinburgh, for elevation starts and ends at 1,
-  # # and number of data points is the whole series starting at 1, count = 31 for 31 days
+  # # and number of data points is the whole series starting at 1, count = 31 for 31 days.
+  # # Convert lat and long to index integers!
   # data_from_file$variable_values <- var.get.nc(nc_conn, 
   #                                             variable_name, 
   #                                             start = c(single_location_latlong[1], single_location_latlong[2],1,1), 
@@ -129,17 +130,18 @@ plot(temperature_to_plot)
 # ie should be British National Grid
 # Should be able to identify Edinburgh
 explore_spatial_nc <- function(inputfile) {
+  # inputfile <- "tasmax_hadukgrid_uk_1km_day_20241101-20241130.nc"
   places_file <- "ABCD_places.csv"
   places <- read_csv(here(data_dir_name, places_file))
   
-  nc_conn <- open.nc(here(data_dir_name, data_subdir, inputfile))
+  nc_conn_spatial <- open.nc(here(data_dir_name, data_subdir, inputfile))
   print(c("Num of dimensions: ", file.inq.nc(nc_conn)["ndims"]))
-  # print(c("Num of global attributes: ", file.inq.nc(nc_conn)["ngatts"]))
-  # print(c("Num of variables: ", file.inq.nc(nc_conn)["nvars"]))
-  # print.nc(nc_conn)
-  lat_from_file  <-  ncvar_get(nc_conn, varid = "lat")
+  # print(c("Num of global attributes: ", file.inq.nc(nc_conn_spatial)["ngatts"]))
+  # print(c("Num of variables: ", file.inq.nc(nc_conn_spatial)["nvars"]))
+  # print.nc(nc_conn_spatial)
+  lat_from_file  <- var.get.nc(nc_conn_spatial, "latitude") 
   
-  long_from_file  <-  ncvar_get(nc_conn, varid = "long")
+  long_from_file  <-  ncvar_get(nc_conn, varid = "longitude")
   
   
   
