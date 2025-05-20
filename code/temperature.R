@@ -147,7 +147,10 @@ explore_spatial_nc <- function(inputfile) {
   # matrix cols V1 to V50 displayed, matrix 900 * 1450,
   # values -10.012911, upwards to -6.444336 and on to row 900, 2.019792423, and 2.053060530.
   
-  
+  # My latitude values from the internet that range from 50 to 60.2 
+  # won't match anything in the matrix without transformation. 
+  # And although longs are within the matrix range, I'd have expected Lerwick and Truro 
+  # to be near the extreme ends and they're not. 
   
 }
 # explore_spatial_nc("tasmin_hadukgrid_uk_1km_day_20241201-20241231.nc")
