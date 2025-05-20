@@ -140,9 +140,12 @@ explore_spatial_nc <- function(inputfile) {
   # print(c("Num of variables: ", file.inq.nc(nc_conn_spatial)["nvars"]))
   # print.nc(nc_conn_spatial)
   lat_from_file  <- var.get.nc(nc_conn_spatial, "latitude") 
-  
-  long_from_file  <-  ncvar_get(nc_conn, varid = "longitude")
-  
+  # view(lat_from_file)
+  # matrix of 900 * 1450 rows, cols V1 to V50 displayed, 
+  # all contain values of eg 47.86002 to around 48.48031
+  long_from_file  <- var.get.nc(nc_conn_spatial, "longitude") 
+  # matrix cols V1 to V50 displayed, matrix 900 * 1450,
+  # values -10.012911, upwards to -6.444336 and on to row 900, 2.019792423, and 2.053060530.
   
   
   
