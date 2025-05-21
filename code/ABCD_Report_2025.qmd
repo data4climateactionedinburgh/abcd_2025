@@ -31,6 +31,11 @@ This report is an open science project - the data, code and text are all being p
 
 Any amendments will be visible in this same GitHub repo, as commits, in the normal Git version control way. This report file, the text, and all the files in the repository are made available under a Creative Commons Zero v1.0 licence, except of course those subject to ownership by the respective data providers. The files created by D4CAE are thus placed in the public domain, and may be copied, adapted and redistributed without condition. If you wish to cite this work, please cite Data 4 Climate Action Edinburgh as the author.
 
+The charts, the references, the associated code, all available in the D4CAE ABCD_2025 GitHub repo, form a resource available to all free of charge, free of conditions. There are probably errors in this document, the code and the data. Please contact us if you find any, so that we can learn from you. This kind of crowd-sourced quality control and collaboration is the driving force that propels Open Science forward. 
+
+Finding this climate data and using it has taken a lot of work. Some datasets were lacking in documentation, some were not openly-licensed, despite being produced using public money. Data reusability is an area where Scotland and the UK can do better - make it FAIR, findable accessible interoperable and reusable. To be specific, while it was a good choice to use the very sustainable NetCDF format for the Hadley centre temperature data, containing plenty of metadata in a standard structure, the red tape to access the data through the CEDA website could have been removed. Furthermore the complex nature of the data, and the specific geospatial grid used for the UK, meant that this data was not feasible to extract and plot onto a graph, even for a volunteer with a high level of coding skill. Hence there's no graph in this version of this report for the daily temperature throughout 2024. A single tutorial, or link to an exemplar publication providing open code for extracting data by location would have made the data reusable. If we find such a resource, we'll include it in next year's report. The SEPA flooding maps are impossible to share, let alone adapt, because of licensing barriers. This is an old-fashioned approach, locking up the data under commercial intellectual property rights. Must do better. 
+
+
 ## About the group
 
 D4CAE was set up by Pauline Ward, who is also the main contributor to this report. You can find our blog and contact details on our website:
@@ -166,11 +171,8 @@ The picture painted here is concerning. Edinburgh's climate is changing. The car
 
 However, there is a power of work being done by volunteers, by the ECCAN network, by the Council and by businesses and the voluntary sector to reduce greenhouse gas emissions. That work needs continued support from funders. And it needs us all to keep the light of optimism in our hearts. 
 
-The charts, the references, the associated code, all available in the D4CAE ABCD_2025 GitHub repo, form a resource available to all free of charge, free of conditions. There are probably errors in this document, the code and the data. Please contact us if you find any, so that we can learn from you. This kind of crowd-sourced quality control and collaboration is the driving force that propels Open Science forward. 
 
-Finding this climate data and using it has taken a lot of work. Some datasets were lacking in documentation, some were not openly-licensed, despite being produced using public money. Data reusability is an area where Scotland and the UK can do better - make it FAIR, findable accessible interoperable and reusable. To be specific, while it was a good choice to use the very sustainable NetCDF format for the Hadley centre temperature data, containing plenty of metadata in a standard structure, the red tape to access the data through the CEDA website could have been removed. Furthermore the complex nature of the data, and the specific geospatial grid used for the UK, meant that this data was not feasible to extract and plot onto a graph, even for a volunteer with a high level of coding skill. Hence there's no graph in this version of this report for the daily temperature throughout 2024. A single tutorial, or link to an exemplar publication providing open code for extracting data by location would have made the data reusable. If we find such a resource, we'll include it in next year's report. The SEPA flooding maps are impossible to share, let alone adapt, because of licensing barriers. This is an old-fashioned approach, locking up the data under commercial intellectual property rights. Must do better. 
-
-
+![Edinburgh Castle and Princes St Gardens. Credit: Pauline Ward CC-0 this image is released into the public domain for use without condition](images/Princes_St_Gdns_20250423_173611.jpg){fig-alt="bright sunny view of blue sky over Edinburgh Castle and Princes Street Gardens"}
 
 # References
 
