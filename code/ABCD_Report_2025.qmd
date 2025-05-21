@@ -63,7 +63,7 @@ The temperature change in Eastern Scotland has been visualised in the form of cl
 
 By way of comparison, here are the warming stripes for Scotland, from the same online tool. The bar chart above uses the vertical axis, making the scale of the temperature rises clear.
 
-The chart shows the temperature in Edinburgh for the whole of the year 2024 was 1.0 degrees celsius above the baseline (1961 to 2010), and just two years before had reached an all-time high that was 1.3 degrees above it. Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
+The chart shows the temperature in Edinburgh for the whole of the year 2024 was 1.0 degrees celsius above the baseline (1961 to 2010), and just two years before had reached an all-time high that was 1.3 degrees above it. The 1961-2010 baseline was already more than 0.6 degrees warmer than pre-industrial levels. Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
 
 However, below, the classic, distinctive and memorable dataviz uses only the colour and shading of the bars to depict the temperature change for Scotland as a whole.
 
@@ -159,6 +159,16 @@ Scope 1 emissions are those very directly under the control of the organisation,
 ![Carbon footprint comparison of scopes 1, 2 and 3, CEC 2013-2024](images/CEC_footprint_scopes.png)
 
 # Conclusion
+
+This emphasis of this report is on providing a baseline set of figures rather than showing trends and analysis. 
+
+The picture painted here is concerning. Edinburgh's climate is changing. The carbon footprint of the city is not falling as quickly as it should be. 
+
+However, there is a power of work being done by volunteers, by the ECCAN network, by the Council and by businesses and the voluntary sector to reduce greenhouse gas emissions. That work needs continued support from funders. And it needs us all to keep the light of optimism in our hearts. 
+
+The charts, the references, the associated code, all available in the D4CAE ABCD_2025 GitHub repo, form a resource available to all free of charge, free of conditions. There are probably errors in this document, the code and the data. Please contact us if you find any, so that we can learn from you. This kind of crowd-sourced quality control and collaboration is the driving force that propels Open Science forward. 
+
+Finding this climate data and using it has taken a lot of work. Some datasets were lacking in documentation, some were not openly-licensed, despite being produced using public money. Data reusability is an area where Scotland and the UK can do better - make it FAIR, findable accessible interoperable and reusable. To be specific, while it was a good choice to use the very sustainable NetCDF format for the Hadley centre temperature data, containing plenty of metadata in a standard structure, the red tape to access the data through the CEDA website could have been removed. Furthermore the complex nature of the data, and the specific geospatial grid used for the UK, meant that this data was not feasible to extract and plot onto a graph, even for a volunteer with a high level of coding skill. Hence there's no graph in this version of this report for the daily temperature throughout 2024. A single tutorial, or link to an exemplar publication providing open code for extracting data by location would have made the data reusable. If we find such a resource, we'll include it in next year's report. The SEPA flooding maps are impossible to share, let alone adapt, because of licensing barriers. This is an old-fashioned approach, locking up the data under commercial intellectual property rights. Must do better. 
 
 
 
