@@ -146,7 +146,17 @@ The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 
 
 Unfortunately we didn't have as much time to dig into the detail of this as we'd like for this year. New Low Traffic Neighbourhoods (LTNs) in Corstorphine (now in place) and Leith (in development) promise to deliver reductions in the city's transport carbon footprint in the coming years.
 
-The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: <https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council>
+The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: <https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council> 
+... these spreadsheets appear to comprise the council's Public Sector Report on Compliance with Climate Change Duties. The figures detail Scope 1, 2 and 3 emissions for the city. In other words this is a carbon footprint calculation, as per the [Greenhouse Gas Protocol](https://ghgprotocol.org/). It is designed to drive improvement. It should not be assumed that reported totals from one year to the next will always fall, since planned emission reduction actions may depend on infrastructure development, and may be influenced by changing energy requirements and so on. Nonetheless, the figures in the 2023/24 report go back to 2010, allowing us to show the trends. 
+
+![Total carbon footprint, City of Edinburgh Council, 2005-2024](images/CEC_C_footprint.png)
+
+The council's overall carbon footprint, according to the figures, was brought down sharply between 2017 and 2020, but has stagnated, flatlining for the most recent four years. 
+
+Scope 1 emissions are those very directly under the control of the organisation, while scopes 2 and 3 are indirect emissions caused by the organisation's activities. The chart shows clearly the scope 1 emissions have not reduced substantially since 2013 when they were first measured. Whereas major reductions were seen in scopes 2 and 3 between 2014 and 2019 but since 2020 there has been almost no progress. A disappointing trend, to say the least. 
+
+
+![Carbon footprint comparison of scopes 1, 2 and 3, CEC 2013-2024](images/CEC_footprint_scopes.png)
 
 # Conclusion
 
