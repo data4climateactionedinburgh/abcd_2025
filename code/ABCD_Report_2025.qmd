@@ -55,7 +55,7 @@ According to the Met Office's Local Climate Action Tool, the projected temperatu
 
 [![temperature and rainfall projected change by 2070](images/LCAT%204%20in%201%20infographic%20Screenshot%202025-03-22%20135250.png)](https://www.lcat.uk/)
 
-https://www.lcat.uk
+Source: [Local Climate Adaptation Tool](https://www.lcat.uk)
 
 The temperature change in Eastern Scotland has been visualised in the form of climate stripes (invented by Ed Hawkins, see references - University of Reading) - see below Edinburgh climate stripes chart (CC-BY University of Reading).
 
@@ -157,7 +157,7 @@ The series of climate reports about the council are available from the Sustainab
 Met Office (2025) "Annual Assessment - 2024" <https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf>
 
 
-LCAT
+LCAT - Local Climate Adaptation Tool, University of Exeter, Then Try This, Cornwall Council and The Alan Turing Institute
 <https://www.lcat.uk>
 
 
