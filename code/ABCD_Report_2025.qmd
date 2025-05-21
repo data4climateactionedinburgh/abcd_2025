@@ -37,13 +37,13 @@ D4CAE was set up by Pauline Ward, who is also the main contributor to this repor
 
 <https://data-4-climate-action-edinburgh.github.io/home/>
 
-Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: - supported ECCAN to process member data, and to select software for this purpose; - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report.  
+Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: - supported ECCAN to process member data, and to select software for this purpose; - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report.
 
-As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust). Details will appear on the [D4CAE blog](https://data-4-climate-action-edinburgh.github.io/home/) in due course. Sincere thanks go to the team delivering the excellent and very enjoyable Climate Springboard course at the Edinburgh Climate Change Institute, which has been essential to that work. 
+As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust). Details will appear on the [D4CAE blog](https://data-4-climate-action-edinburgh.github.io/home/) in due course. Sincere thanks go to the team delivering the excellent and very enjoyable [Climate Springboard course at the Edinburgh Climate Change Institute](https://edinburghcentre.org/projects/climate-business-leaders), which has been essential to that work.
 
 # In a nutshell
 
-Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required. The sections on ECCAN and the City of Edinburgh Council highlight serious efforts being made throughout the communities of Edinburgh to reduce Edinburgh's carbon footprint.  
+Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required. The sections on ECCAN and the City of Edinburgh Council highlight serious efforts being made throughout the communities of Edinburgh to reduce Edinburgh's carbon footprint.
 
 # Environment
 
@@ -69,7 +69,7 @@ However, below, the classic, distinctive and memorable dataviz uses only the col
 
 [![Warming stripes, Scotland's average temperature 1884 to 2024](images/EUROPE-United_Kingdom-Scotland-1884-2024-MO.png){fig-alt="Warming strips depicting rising average temperatures in Scotland"}](https://showyourstripes.info/s/europe/unitedkingdom/scotland)
 
-# Rainfall
+## Rainfall
 
 The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 12.5% higher than the 1980 level of 2.12mm per day.
 
@@ -97,7 +97,11 @@ Further details on how to use SEPA Flood Maps can be found in the [Methods secti
 
 ## Extreme weather - Storm Eowyn
 
-Storm Eowyn tested Edinburgh’s resilience on Friday 24 January 2025, with a Met Office Red Weather Warning seeing the city's schools, supermarkets, offices and bus routes shut down for the best part of a day. Since the storm took place in 2025, technically it is outside the scope of this report and will feature in next year's report. However, as an extraordinary weather event,  
+Storm Eowyn tested Edinburgh’s resilience on Friday 24 January 2025, with a Met Office Red Weather Warning seeing the city's schools, supermarkets, offices and bus routes shut down for the best part of a day. The people of Edinburgh as a whole did the right thing, following the official advice and staying at home, to protect themselves and others across our communities, and to allow those who needed to continue their work, out and about across the city, to be as safe as possible. Our thoughts are with the family of the young man in Ayrshire, killed by a falling tree several hours before the red warning was even in place. We saw numerous trees brought down or damaged across Edinburgh by Storm Eowyn. 
+
+
+
+Since the storm took place in 2025, technically it is outside the scope of this report and will feature in next year's report. However it would have seemed absurd to ignore such an extraordinary and dangerous weather event in this year's publication. 
 
 # Travel
 
@@ -113,8 +117,7 @@ This data visualisation was coded in R (by Pauline) using the ggplot package - t
 
 ![Cycling counter data, peaking in summer and falling in winter. The R code that produced this chart can be found at <https://github.com/data4climateactionedinburgh/abcd_2025/blob/main/code/active_travel.R>](images/Daily_total_cycling_2016_to_2024.png){fig-alt="Scatter plot showing cycling total for all counters in Edinburgh."}
 
-Data from Spokes confirms the upward trend: 
-"The biannual Spokes city-centre and Porty traffic counts, on Tuesday 11 November found bikes up almost everywhere compared to November 2023 – though mostly not by large amounts. In the city centre morning rush hour bikes were up 4% from 365 to 381, and at lunchtime up 17% from 156 to 183. In Porty, totalling morning and lunchtime, bike numbers were up a huge 36%, albeit from the low base of 70, to 95. Whilst it is great to see numbers rising at our traditional city centre on-road count locations,* it is notable that Cycling Scotland’s automatic counters have found much greater increases in bike numbers at locations where new bike infrastructure is in place" 
+Data from Spokes confirms the upward trend: "The biannual Spokes city-centre and Porty traffic counts, on Tuesday 11 November found bikes up almost everywhere compared to November 2023 – though mostly not by large amounts. In the city centre morning rush hour bikes were up 4% from 365 to 381, and at lunchtime up 17% from 156 to 183. In Porty, totalling morning and lunchtime, bike numbers were up a huge 36%, albeit from the low base of 70, to 95. Whilst it is great to see numbers rising at our traditional city centre on-road count locations,\* it is notable that Cycling Scotland’s automatic counters have found much greater increases in bike numbers at locations where new bike infrastructure is in place"
 
 [Nov Traffic Count: bikes up, but more if new infra](http://www.spokes.org.uk/2024/11/nov-traffic-count-bikes-up-but-more-if-new-infra/)
 
@@ -122,31 +125,28 @@ Data from Spokes confirms the upward trend:
 
 ## ECCAN
 
-ECCAN is the Edinburgh Communities Climate Action Network. For the first time, ECCAN has gathered a full year's data on their engagement and support work with their member charities and other voluntary organisations. 
+ECCAN is the Edinburgh Communities Climate Action Network. For the first time, ECCAN has gathered a full year's data on their engagement and support work with their member charities and other voluntary organisations.
 
-ECCAN key stats for the year 1 April 2024 to 31 March 2025: 
+ECCAN key stats for the year 1 April 2024 to 31 March 2025:
 
-* 12 Climate Champions trained
-* 150 groups belong to ECCAN as members
-* 294 people belong to ECCAN as individual members
-* 898 new subscribers to the newsletter
+-   12 Climate Champions trained
+-   150 groups belong to ECCAN as members
+-   294 people belong to ECCAN as individual members
+-   898 new subscribers to the newsletter
 
-The team has also gathered more than twenty-five questionnaire responses over the past six months, and these showed respondents found that their involvement with ECCAN over the preceding year had increased their (or their organisation's) capacity and confidence in dealing with the climate emergency, as well as supporting them to change their practices and develop skills. 
+The team has also gathered more than twenty-five questionnaire responses over the past six months, and these showed respondents found that their involvement with ECCAN over the preceding year had increased their (or their organisation's) capacity and confidence in dealing with the climate emergency, as well as supporting them to change their practices and develop skills.
 
 ## City of Edinburgh Council
 
 The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 climate duties report provides the following statement on the approach and governance in place with respect to climate change:
 
-"The City of Edinburgh Council declared a climate emergency in February 2019, set a new target for the city to be net zero by 2030 and declared a nature emergency in 2023. To achieve this net zero target and adapt the city to the impacts of climate change, a 2030 Climate Strategy and Implementation Plan was approved in November 2021. The Strategy contains Council and citywide governance and reporting structures and strategic actions to achieve the 2030 net zero target and adapt the city. A Council Emissions Reduction Plan (CERP) (approved November 2021) outlines a phased action plan for reducing Council corporate emissions emissions. A CERP Board, established in 2022, provides strategic leadership and operational accountability for delivery of the Council’s organisational emissions target of net zero by 2030. It is chaired by the Service Director for Sustainable Development and includes Council’s key service areas for each of the strands of the plan (Buildings, Fleet, Waste, Human Resources and Procurement)." 
+"The City of Edinburgh Council declared a climate emergency in February 2019, set a new target for the city to be net zero by 2030 and declared a nature emergency in 2023. To achieve this net zero target and adapt the city to the impacts of climate change, a 2030 Climate Strategy and Implementation Plan was approved in November 2021. The Strategy contains Council and citywide governance and reporting structures and strategic actions to achieve the 2030 net zero target and adapt the city. A Council Emissions Reduction Plan (CERP) (approved November 2021) outlines a phased action plan for reducing Council corporate emissions emissions. A CERP Board, established in 2022, provides strategic leadership and operational accountability for delivery of the Council’s organisational emissions target of net zero by 2030. It is chaired by the Service Director for Sustainable Development and includes Council’s key service areas for each of the strands of the plan (Buildings, Fleet, Waste, Human Resources and Procurement)."
 
-Unfortunately we didn't have as much time to dig into the detail of this as we'd like for this year. New Low Traffic Neighbourhoods (LTNs) in Corstorphine (now in place) and Leith (in development) promise to deliver reductions in the city's transport carbon footprint in the coming years. 
+Unfortunately we didn't have as much time to dig into the detail of this as we'd like for this year. New Low Traffic Neighbourhoods (LTNs) in Corstorphine (now in place) and Leith (in development) promise to deliver reductions in the city's transport carbon footprint in the coming years.
 
-The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: 
-<https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council> 
+The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: <https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council>
 
 # Conclusion
-
-
 
 # References
 
@@ -183,7 +183,4 @@ Climate Stripes, University of Reading, Ed Hawkins <https://www.reading.ac.uk/pl
 
 Cycling Open Data, Cycling Scotland <https://usmart.io/org/cyclingscotland/>
 
-EBRIC 
-<https://www.edinbric.scot/all-news/about-you>
-[Homeowners Questionnaire](https://tinyurl.com/EdinBRIChqFull23)
-
+EBRIC <https://www.edinbric.scot/all-news/about-you> [Homeowners Questionnaire](https://tinyurl.com/EdinBRIChqFull23)
