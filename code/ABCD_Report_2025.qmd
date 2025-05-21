@@ -39,13 +39,15 @@ D4CAE was set up by Pauline Ward, who is also the main contributor to this repor
 
 Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: - supported ECCAN to process member data, and to select software for this purpose; - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report.  
 
-As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust). Details will appear on the [D4CAE blog](https://data-4-climate-action-edinburgh.github.io/home/) in due course. 
+As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust). Details will appear on the [D4CAE blog](https://data-4-climate-action-edinburgh.github.io/home/) in due course. Sincere thanks go to the team delivering the excellent and very enjoyable Climate Springboard course at the Edinburgh Climate Change Institute, which has been essential to that work. 
 
 # In a nutshell
 
-Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
+Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required. The sections on ECCAN and the City of Edinburgh Council highlight serious efforts being made throughout the communities of Edinburgh to reduce Edinburgh's carbon footprint.  
 
-# Temperature
+# Environment
+
+## Temperature
 
 The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the 0.5 to 1.0 degrees celsius anomaly relating to the 1991 to 2020 period.
 
@@ -93,6 +95,10 @@ Rising sea levels will increase the risk of coastal flooding.
 
 Further details on how to use SEPA Flood Maps can be found in the [Methods section Methods.html](https://github.com/search?q=repo%3Adata4climateactionedinburgh%2Fabcd_2025%20Methods.html&type=code).
 
+## Extreme weather - Storm Eowyn
+
+Storm Eowyn tested Edinburgh’s resilience on Friday 24 January 2025, with a Met Office Red Weather Warning seeing the city's schools, supermarkets, offices and bus routes shut down for the best part of a day. Since the storm took place in 2025, technically it is outside the scope of this report and will feature in next year's report. However, as an extraordinary weather event,  
+
 # Travel
 
 Active travel such as cycling helps reduce greenhouse gas emissions.
@@ -134,6 +140,13 @@ The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 
 "The City of Edinburgh Council declared a climate emergency in February 2019, set a new target for the city to be net zero by 2030 and declared a nature emergency in 2023. To achieve this net zero target and adapt the city to the impacts of climate change, a 2030 Climate Strategy and Implementation Plan was approved in November 2021. The Strategy contains Council and citywide governance and reporting structures and strategic actions to achieve the 2030 net zero target and adapt the city. A Council Emissions Reduction Plan (CERP) (approved November 2021) outlines a phased action plan for reducing Council corporate emissions emissions. A CERP Board, established in 2022, provides strategic leadership and operational accountability for delivery of the Council’s organisational emissions target of net zero by 2030. It is chaired by the Service Director for Sustainable Development and includes Council’s key service areas for each of the strands of the plan (Buildings, Fleet, Waste, Human Resources and Procurement)." 
 
 Unfortunately we didn't have as much time to dig into the detail of this as we'd like for this year. New Low Traffic Neighbourhoods (LTNs) in Corstorphine (now in place) and Leith (in development) promise to deliver reductions in the city's transport carbon footprint in the coming years. 
+
+The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: 
+<https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council> 
+
+# Conclusion
+
+
 
 # References
 
