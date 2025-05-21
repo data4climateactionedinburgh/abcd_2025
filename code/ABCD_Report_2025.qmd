@@ -9,7 +9,7 @@ toc: true
 toc-depth: 2
 ---
 
-## Analysis By the Collective: D4CAE (Data for Climate Action Edinburgh)
+### Analysis By the Collective: D4CAE (Data for Climate Action Edinburgh)
 
 [![](images/logo_organization_trees_bees_PCs_peeps.png){fig-alt="The D4CAE logo depicting people using laptops, a tree, a bee and weather symbols"}](https://data-4-climate-action-edinburgh.github.io/home/)
 
@@ -97,9 +97,11 @@ Further details on how to use SEPA Flood Maps can be found in the [Methods secti
 
 ## Extreme weather - Storm Eowyn
 
-Storm Eowyn tested Edinburgh’s resilience on Friday 24 January 2025, with a Met Office Red Weather Warning seeing the city's schools, supermarkets, offices and bus routes shut down for the best part of a day. The people of Edinburgh as a whole did the right thing, following the official advice and staying at home, to protect themselves and others across our communities, and to allow those who needed to continue their work, out and about across the city, to be as safe as possible. Our thoughts are with the family of the young man in Ayrshire, killed by a falling tree several hours before the red warning was even in place. We saw numerous trees brought down or damaged across Edinburgh by Storm Eowyn. 
+Storm Eowyn tested Edinburgh’s resilience on Friday 24 January 2025, with a Met Office Red Weather Warning seeing the city's schools, supermarkets, offices and bus routes shut down for the best part of a day. The people of Edinburgh as a whole did the right thing, following the official advice and staying at home, to protect themselves and others across our communities, and to allow those who needed to continue their work, out and about across the city, to be as safe as possible. Our thoughts are with the family of the young man in Ayrshire, killed by a falling tree several hours before the red warning was even in place. 
 
-[![](images/ferry_rd_path_tree_blocking20250125_101541.jpg){fig-alt="Fallen tree blocking the Ferry Road path"}]
+We saw numerous trees brought down or damaged across Edinburgh by Storm Eowyn. The Botanics alone lost fifteen trees. Paths were blocked. By and large, council services did a very good job of swiftly finding and tackling fallen trees, clearing paths. It is a natural part of the carbon cycle that trees are brought down by storms. It’s most important we replace them by planting new ones, the right tree in the right place, to support our pollinators and bird life, and taking care of them properly to ensure they grow. They must be replaced with species that are resilient to the changes we continue to see in our climate, and that support local ecosystems and flood defences. 
+
+![(images/ferry_rd_path_tree_blocking20250125_101541.jpg){fig-alt="Fallen tree blocking the Ferry Road path"}]
 
 Since the storm took place in 2025, technically it is outside the scope of this report and will feature in next year's report. However it would have seemed absurd to ignore such an extraordinary and dangerous weather event in this year's publication. 
 
@@ -147,6 +149,8 @@ Unfortunately we didn't have as much time to dig into the detail of this as we'd
 The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: <https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council>
 
 # Conclusion
+
+
 
 # References
 
