@@ -99,7 +99,7 @@ Further details on how to use SEPA Flood Maps can be found in the [Methods secti
 
 Storm Eowyn tested Edinburgh’s resilience on Friday 24 January 2025, with a Met Office Red Weather Warning seeing the city's schools, supermarkets, offices and bus routes shut down for the best part of a day. The people of Edinburgh as a whole did the right thing, following the official advice and staying at home, to protect themselves and others across our communities, and to allow those who needed to continue their work, out and about across the city, to be as safe as possible. Our thoughts are with the family of the young man in Ayrshire, killed by a falling tree several hours before the red warning was even in place. We saw numerous trees brought down or damaged across Edinburgh by Storm Eowyn. 
 
-
+[![](images/ferry_rd_path_tree_blocking20250125_101541.jpg){fig-alt="Fallen tree blocking the Ferry Road path"}]
 
 Since the storm took place in 2025, technically it is outside the scope of this report and will feature in next year's report. However it would have seemed absurd to ignore such an extraordinary and dangerous weather event in this year's publication. 
 
