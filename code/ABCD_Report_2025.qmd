@@ -54,9 +54,12 @@ Our city is a full degree warmer on the thermometer than just a few decades ago.
 
 ## Temperature
 
-The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the 0.5 to 1.0 degrees celsius anomaly relating to the 1991 to 2020 period.
+### Present day: 2024 
 
-According to the Met Office's Local Climate Action Tool, the projected temperature increase for the City of Edinburgh, based on current policies, by 2070 is 2.83 degrees celsius.
+The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the '0.5 to 1.0 degrees celsius anomaly' (ie temperature increase) relative to the 1991 to 2020 period. The report is "a provisional assessment of the weather experienced across the UK during 2024 and how it compares with the 1991 to 2020 average".
+
+### Long-term Projection: 2070
+According to the Met Office's Local Climate Action Tool, the projected temperature increase for the City of Edinburgh, is 2.83 degrees celsius by 2070, based on current policies.
 
 [![temperature and rainfall projected change by 2070](images/LCAT%204%20in%201%20infographic%20Screenshot%202025-03-22%20135250.png)](https://www.lcat.uk/)
 
