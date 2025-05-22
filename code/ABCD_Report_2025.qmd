@@ -2,7 +2,7 @@
 title: "ABCD Report 2025"
 author: "D4CAE - Data 4 Climate Action Edinburgh"
 format: 
- html:
+ pdf:
   mainfont: "DejaVu Sans"
 editor: visual
 toc: true
@@ -13,7 +13,7 @@ toc-depth: 2
 
 [![](images/logo_organization_trees_bees_PCs_peeps.png){fig-alt="The D4CAE logo depicting people using laptops, a tree, a bee and weather symbols"}](https://data-4-climate-action-edinburgh.github.io/home/)
 
-Published: v1.0 21 May 2025
+Published: v1.1 22 May 2025
 
 # Introduction
 
@@ -54,29 +54,32 @@ Our city is a full degree warmer on the thermometer than just a few decades ago.
 
 ## Temperature
 
-The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the 0.5 to 1.0 degrees celsius anomaly relating to the 1991 to 2020 period.
+### Present day: 2024 
 
-According to the Met Office's Local Climate Action Tool, the projected temperature increase for the City of Edinburgh, based on current policies, by 2070 is 2.83 degrees celsius.
+The Met Office [annual summary of 2024](https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/weather/learn-about/uk-past-events/summaries/annual_assessment_2024.pdf) temperature map shows Edinburgh and the surrounding area categorised as being in the '0.5 to 1.0 degrees celsius anomaly' (ie temperature increase) relative to the 1991 to 2020 period. The report is "a provisional assessment of the weather experienced across the UK during 2024 and how it compares with the 1991 to 2020 average".
+
+### Long-term Projection: 2070
+According to the Met Office's Local Climate Action Tool, the projected temperature increase for the City of Edinburgh, is 2.83 degrees celsius by 2070, based on current policies.
 
 [![temperature and rainfall projected change by 2070](images/LCAT%204%20in%201%20infographic%20Screenshot%202025-03-22%20135250.png)](https://www.lcat.uk/)
 
 Source: [Local Climate Adaptation Tool](https://www.lcat.uk)
 
-The temperature change in Eastern Scotland has been visualised in the form of climate stripes (invented by Ed Hawkins, see references - University of Reading) - see below Edinburgh climate stripes chart (CC-BY University of Reading).
+### Annual temperatures from 1850 - 2024
+
+The temperature change in Eastern Scotland has been visualised in the form of climate stripes (invented by Ed Hawkins, see references - University of Reading) - see below: the Edinburgh climate stripes chart (CC-BY University of Reading).
 
 [![](images/EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Bar chart depicting average temperature in Edinburgh rising from 1850 to 2024"}](https://showyourstripes.info/)
 
-By way of comparison, here are the warming stripes for Scotland, from the same online tool. The bar chart above uses the vertical axis, making the scale of the temperature rises clear.
+We can see from the chart that the temperature in Edinburgh for the whole of the year 2024 was 1.0 degrees celsius above the 1961-to-2010 baseline. We can also see that just two years earlier, Edinburgh's temperature reached an all-time high that was 1.3 degrees above the same baseline. This 1961-2010 baseline was already more than 0.6 degrees warmer than pre-industrial levels. Putting this all together, we can say: Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
 
-The chart shows the temperature in Edinburgh for the whole of the year 2024 was 1.0 degrees celsius above the baseline (1961 to 2010), and just two years before had reached an all-time high that was 1.3 degrees above it. The 1961-2010 baseline was already more than 0.6 degrees warmer than pre-industrial levels. Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
-
-However, below, the classic, distinctive and memorable dataviz uses only the colour and shading of the bars to depict the temperature change for Scotland as a whole.
+A word on data visualisation style: The bar chart above uses the vertical axis, making the scale of the temperature rises clear. Whereas, seen below, the classic climate stripes, such an iconic, distinctive and memorable dataviz, uses only the colour and shading of the bars to depict the temperature change for Scotland as a whole.
 
 [![Warming stripes, Scotland's average temperature 1884 to 2024](images/EUROPE-United_Kingdom-Scotland-1884-2024-MO.png){fig-alt="Warming strips depicting rising average temperatures in Scotland"}](https://showyourstripes.info/s/europe/unitedkingdom/scotland)
 
 ## Rainfall
 
-The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 12.5% higher than the 1980 level of 2.12mm per day.
+The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 11.8% higher than the 1980 level of 2.12mm per day.
 
 [![Projected rainfall in Edinburgh, big increase in 2030](images/LCAT%20rain%20decades%20Screenshot%202025-03-22%20141104.png){fig-alt="Bar chart showing rainfall in 1980 at 2.12mm per day, 2030 at 2.37mm per day, 2040 at 2.16, 2050 at 2.03, 2060 at 2.17 and 2070 at 2.12mm per day."}](https://www.lcat.uk/)
 
@@ -152,7 +155,7 @@ The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 
 Unfortunately we didn't have as much time to dig into the detail of this as we'd like for this year. New Low Traffic Neighbourhoods (LTNs) in Corstorphine (now in place) and Leith (in development) promise to deliver reductions in the city's transport carbon footprint in the coming years.
 
 The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: <https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council> 
-... these spreadsheets appear to comprise the council's Public Sector Report on Compliance with Climate Change Duties. The figures detail Scope 1, 2 and 3 emissions for the city. In other words this is a carbon footprint calculation, as per the [Greenhouse Gas Protocol](https://ghgprotocol.org/). It is designed to drive improvement. It should not be assumed that reported totals from one year to the next will always fall, since planned emission reduction actions may depend on infrastructure development, and may be influenced by changing energy requirements and so on. Nonetheless, the figures in the 2023/24 report go back to 2010, allowing us to show the trends. 
+... these spreadsheets appear to comprise the council's Public Sector Report on Compliance with Climate Change Duties. The figures in the file represent Scope 1, 2 and 3 emissions for the city. In other words this is a carbon footprint calculation, as per the [Greenhouse Gas Protocol](https://ghgprotocol.org/). It is designed to drive improvement. It should not be assumed that reported totals from one year to the next will always fall, since planned emission reduction actions may depend on infrastructure development, and may be influenced by changing energy requirements and so on. Nonetheless, the figures in the 2023/24 report go back to 2005, allowing us to show the trends. 
 
 ![Total carbon footprint, City of Edinburgh Council, 2005-2024](images/CEC_C_footprint.png)
 
