@@ -1,7 +1,9 @@
 ---
 title: "Methods - ABCD Report 2025"
 author: "D4CAE - Data 4 Climate Action Edinburgh"
-format: pdf
+format: 
+ html:
+  mainfont: "DejaVu Sans"
 editor: visual
 toc: true
 toc-depth: 1
@@ -12,7 +14,7 @@ toc-depth: 1
 
 As a citizen science group, this Methods document is written for a citizen scientist audience, to share learning about working with climate data.
 
-Data visualisations for this report have been produced using online tools and coding in R.
+Data visualisations for this report have been produced using online tools and coding in R and Excel.
 
 ## Temperature
 
@@ -65,9 +67,13 @@ We knew from the one-off survey we ran at Edinburgh Climate Festival 2023 that t
 
 D4CAE is grateful to the following people for sharing ideas and signposting data sources that contributed to this report:
 
-ECCAN - Edinburgh Communities Climate Action Network; Bruce Whyte; Isabella Tortora Brayda di Belvedere.
+ECCAN - Edinburgh Communities Climate Action Network; 
+Bruce Whyte; 
+Isabella Tortora Brayda di Belvedere. 
 
-Pauline Ward generated the data visualisations using online tools and coding in R. Pauline has also written the copy. Yes, I do feel a bit funny writing about myself in the third person. It is hoped a greater number of the group's existing and new volunteers will be involved more directly in producing future editions.
+Thanks go to Izi Robe of the Climate Springboard team at the Edinburgh Climate Change Institute for the excellent training and support.
+
+Pauline Ward generated the data visualisations using online tools and coding in R and Excel. Pauline has also written the copy. Yes, I do feel a bit funny writing about myself in the third person. It is hoped a greater number of the group's existing and new volunteers will be involved more directly in producing future editions.
 
 # Data Sources
 
