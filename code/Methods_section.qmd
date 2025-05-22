@@ -2,7 +2,7 @@
 title: "Methods - ABCD Report 2025"
 author: "D4CAE - Data 4 Climate Action Edinburgh"
 format: 
- pdf:
+ html:
   mainfont: "DejaVu Sans"
 editor: visual
 toc: true

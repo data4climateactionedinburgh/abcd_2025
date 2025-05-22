@@ -15,8 +15,7 @@ toc-depth: 2
 
 Published: v1.1.2, 22 May 2025 
 DOI (Digital Object Identifier): 
-[![](){DOI badge}]()
-
+ 
 # Introduction
 
 ## Scope
@@ -44,7 +43,7 @@ D4CAE was set up by Pauline Ward, who is also the main contributor to this repor
 
 <https://data-4-climate-action-edinburgh.github.io/home/>
 
-Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: - supported ECCAN to process member data, and to select software for this purpose; - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report.
+Over the course of the past couple of years, we've explored a range of different projects, some may not have resulted in any visible output, such is the nature of citizen science. However, the group has built good relationships with stakeholders in Edinburgh's climate action scene and has completed several projects successfully for example: - supported ECCAN to process member data, and to select software for this purpose; - provided data visualisations of survey data to EBRIC (Edinburgh Building Retrofit and Improvement Collective), which they used in a published report. 
 
 As for 2025 work, Pauline is currently producing a simplified carbon footprint at the request of one of ECCAN's member charities (Fountainbridge Canalside Community Trust). Details will appear on the [D4CAE blog](https://data-4-climate-action-edinburgh.github.io/home/) in due course. Sincere thanks go to the team delivering the excellent and very enjoyable [Climate Springboard course at the Edinburgh Climate Change Institute](https://edinburghcentre.org/projects/climate-business-leaders), which has been essential to that work.
 
