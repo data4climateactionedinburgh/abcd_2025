@@ -79,7 +79,7 @@ A word on data visualisation style: The bar chart above uses the vertical axis, 
 
 ## Rainfall
 
-The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 12.5% higher than the 1980 level of 2.12mm per day.
+The Met Office LCAT tool shows that by 2030, under the existing policies, Edinburgh's average rainfall will be 2.37mm per day - that is a whopping 11.8% higher than the 1980 level of 2.12mm per day.
 
 [![Projected rainfall in Edinburgh, big increase in 2030](images/LCAT%20rain%20decades%20Screenshot%202025-03-22%20141104.png){fig-alt="Bar chart showing rainfall in 1980 at 2.12mm per day, 2030 at 2.37mm per day, 2040 at 2.16, 2050 at 2.03, 2060 at 2.17 and 2070 at 2.12mm per day."}](https://www.lcat.uk/)
 
