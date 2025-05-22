@@ -13,7 +13,7 @@ toc-depth: 2
 
 [![](images/logo_organization_trees_bees_PCs_peeps.png){fig-alt="The D4CAE logo depicting people using laptops, a tree, a bee and weather symbols"}](https://data-4-climate-action-edinburgh.github.io/home/)
 
-Published: v1.1, 22 May 2025 
+Published: v1.1.2, 22 May 2025 
 DOI (Digital Object Identifier): 
 [![](){DOI badge}]()
 
