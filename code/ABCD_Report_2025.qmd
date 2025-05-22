@@ -13,7 +13,7 @@ toc-depth: 2
 
 [![](images/logo_organization_trees_bees_PCs_peeps.png){fig-alt="The D4CAE logo depicting people using laptops, a tree, a bee and weather symbols"}](https://data-4-climate-action-edinburgh.github.io/home/)
 
-Published: v1.0 21 May 2025
+Published: v1.1 22 May 2025
 
 # Introduction
 
@@ -152,7 +152,7 @@ The CEC is a funder and close working partner of ECCAN. The council's 2023/2024 
 Unfortunately we didn't have as much time to dig into the detail of this as we'd like for this year. New Low Traffic Neighbourhoods (LTNs) in Corstorphine (now in place) and Leith (in development) promise to deliver reductions in the city's transport carbon footprint in the coming years.
 
 The series of climate reports about the council are available from the Sustainable Scotland Network, the latest at the time of writing is for 2023-2024: <https://sustainablescotlandnetwork.org/reports/city-of-edinburgh-council> 
-... these spreadsheets appear to comprise the council's Public Sector Report on Compliance with Climate Change Duties. The figures detail Scope 1, 2 and 3 emissions for the city. In other words this is a carbon footprint calculation, as per the [Greenhouse Gas Protocol](https://ghgprotocol.org/). It is designed to drive improvement. It should not be assumed that reported totals from one year to the next will always fall, since planned emission reduction actions may depend on infrastructure development, and may be influenced by changing energy requirements and so on. Nonetheless, the figures in the 2023/24 report go back to 2010, allowing us to show the trends. 
+... these spreadsheets appear to comprise the council's Public Sector Report on Compliance with Climate Change Duties. The figures in the file represent Scope 1, 2 and 3 emissions for the city. In other words this is a carbon footprint calculation, as per the [Greenhouse Gas Protocol](https://ghgprotocol.org/). It is designed to drive improvement. It should not be assumed that reported totals from one year to the next will always fall, since planned emission reduction actions may depend on infrastructure development, and may be influenced by changing energy requirements and so on. Nonetheless, the figures in the 2023/24 report go back to 2005, allowing us to show the trends. 
 
 ![Total carbon footprint, City of Edinburgh Council, 2005-2024](images/CEC_C_footprint.png)
 
