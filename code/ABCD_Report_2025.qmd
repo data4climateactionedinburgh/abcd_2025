@@ -65,15 +65,15 @@ According to the Met Office's Local Climate Action Tool, the projected temperatu
 
 Source: [Local Climate Adaptation Tool](https://www.lcat.uk)
 
-The temperature change in Eastern Scotland has been visualised in the form of climate stripes (invented by Ed Hawkins, see references - University of Reading) - see below Edinburgh climate stripes chart (CC-BY University of Reading).
+### Annual temperatures from 1850 - 2024
+
+The temperature change in Eastern Scotland has been visualised in the form of climate stripes (invented by Ed Hawkins, see references - University of Reading) - see below: the Edinburgh climate stripes chart (CC-BY University of Reading).
 
 [![](images/EUROPE-United_Kingdom-Edinburgh-1850-2024-BK-barslabel.png){fig-alt="Bar chart depicting average temperature in Edinburgh rising from 1850 to 2024"}](https://showyourstripes.info/)
 
-By way of comparison, here are the warming stripes for Scotland, from the same online tool. The bar chart above uses the vertical axis, making the scale of the temperature rises clear.
+We can see from the chart that the temperature in Edinburgh for the whole of the year 2024 was 1.0 degrees celsius above the 1961-to-2010 baseline. We can also see that just two years earlier, Edinburgh's temperature reached an all-time high that was 1.3 degrees above the same baseline. This 1961-2010 baseline was already more than 0.6 degrees warmer than pre-industrial levels. Putting this all together, we can say: Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
 
-The chart shows the temperature in Edinburgh for the whole of the year 2024 was 1.0 degrees celsius above the baseline (1961 to 2010), and just two years before had reached an all-time high that was 1.3 degrees above it. The 1961-2010 baseline was already more than 0.6 degrees warmer than pre-industrial levels. Our city is a full degree warmer on the thermometer than just a few decades ago. Such a change inevitably affects our ecosystems profoundly. And the line is only just starting to plateau. Sustained climate action is required.
-
-However, below, the classic, distinctive and memorable dataviz uses only the colour and shading of the bars to depict the temperature change for Scotland as a whole.
+A word on data visualisation style: The bar chart above uses the vertical axis, making the scale of the temperature rises clear. Whereas, seen below, the classic climate stripes, such an iconic, distinctive and memorable dataviz, uses only the colour and shading of the bars to depict the temperature change for Scotland as a whole.
 
 [![Warming stripes, Scotland's average temperature 1884 to 2024](images/EUROPE-United_Kingdom-Scotland-1884-2024-MO.png){fig-alt="Warming strips depicting rising average temperatures in Scotland"}](https://showyourstripes.info/s/europe/unitedkingdom/scotland)
 
